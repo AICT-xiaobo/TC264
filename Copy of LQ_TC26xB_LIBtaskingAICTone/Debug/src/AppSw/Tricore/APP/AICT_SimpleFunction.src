@@ -1,0 +1,682 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99293038"
+	.compiler_invocation	"ctc --dep-file=src\\AppSw\\Tricore\\APP\\.AICT_SimpleFunction.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --iso=99 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\APP -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\Main -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr\\TC26B -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\If -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\APP -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\Main -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\Driver -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr\\TC26B -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\If -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.src ..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.AICT_SimpleFunction.myabs',code,cluster('myabs')
+	.sect	'.text.AICT_SimpleFunction.myabs'
+	.align	2
+	
+	.global	myabs
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	     1  /*
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	     2   * AICT_SimpleFunction.c
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	     3   *
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	     4   *  Created on: 2020年5月13日
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	     5   *      Author: 小波666
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	     6   */
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	     7  /*********************************************************************************************************************
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	     8   * COPYRIGHT NOTICE
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	     9   * Copyright (c) 2018,逐飞科技
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    10   * All rights reserved.
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    11   * 技术讨论QQ群：179029047
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    12   *
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    13   * 以下所有内容版权均属逐飞科技所有，未经允许不得用于商业用途，
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    14   * 欢迎各位使用并传播本程序，修改内容时必须保留逐飞科技的版权声明。
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    15   *
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    16   * @file       		AICT_SimpleFunction
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    17   *
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    18   * @author     		逐飞科技(QQ3184284598)
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    19   *
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    20   * @Software
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    21   * @Target core		TC264DA
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    22   * @Taobao   		https://seekfree.taobao.com/
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    23   * @date       		2020-05-13
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    24   ********************************************************************************************************************/
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    25  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    26  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    27  #include "AICT_SimpleFunction.h"
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    28  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    29  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    30  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    31  //  @brief      绝对值函数
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    32  //  @param      dat				需要求绝对值的数
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    33  //  @return     int				返回绝对值
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    34  //  Sample usage:				dat = myabs(dat);//将dat变成正数
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    35  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    36  int  myabs(int dat)
+; Function myabs
+.L11:
+myabs:	.type	func
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    37  {
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    38      if(dat>=0)  return dat;
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    39      else        return -dat;
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    40  }
+	abs	d2,d4
+	ret
+.L50:
+	
+__myabs_function_end:
+	.size	myabs,__myabs_function_end-myabs
+.L28:
+	; End of function
+	
+	.sdecl	'.text.AICT_SimpleFunction.myfabs',code,cluster('myfabs')
+	.sect	'.text.AICT_SimpleFunction.myfabs'
+	.align	2
+	
+	.global	myfabs
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    41  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    42  //  @brief      绝对值函数
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    43  //  @param      dat				需要求绝对值的数
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    44  //  @return     float				返回绝对值
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    45  //  Sample usage:				dat = myabs(dat);//将dat变成正数
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    46  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    47  float  myfabs(float dat)
+; Function myfabs
+.L13:
+myfabs:	.type	func
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    48  {
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    49      if(dat>=0)  return dat;
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    50      else        return -dat;
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    51  }
+	insert	d2,d4,#0,#31,#1
+	ret
+.L65:
+	
+__myfabs_function_end:
+	.size	myfabs,__myfabs_function_end-myfabs
+.L48:
+	; End of function
+	
+	.sdecl	'.text.AICT_SimpleFunction.my_delay',code,cluster('my_delay')
+	.sect	'.text.AICT_SimpleFunction.my_delay'
+	.align	2
+	
+	.global	my_delay
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    52  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    53  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    54  //  @brief      软件延时
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    55  //  @param      t				延时时间
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    56  //  @return     void
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    57  //  Sample usage:
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    58  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    59  void my_delay(long t)
+; Function my_delay
+.L15:
+my_delay:	.type	func
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    60  {
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    61      while(t--);
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    62  }
+	ret
+.L52:
+	
+__my_delay_function_end:
+	.size	my_delay,__my_delay_function_end-my_delay
+.L33:
+	; End of function
+	
+	.sdecl	'.text.AICT_SimpleFunction.limit',code,cluster('limit')
+	.sect	'.text.AICT_SimpleFunction.limit'
+	.align	2
+	
+	.global	limit
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    63  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    64  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    65  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    66  //  @brief      限幅
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    67  //  @param      x				被限幅的数据
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    68  //  @param      y				限幅范围(数据会被限制在-y至+y之间)
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    69  //  @return     float			限幅之后的数据
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    70  //  Sample usage:				float dat = limit(500,300);//数据被限制在-300至+300之间  因此返回的结果是300
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    71  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    72  float limit(float x, uint16 y)
+; Function limit
+.L17:
+limit:	.type	func
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    73  {
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    74      if(x>y)             return y;
+	utof	d2,d5
+.L83:
+	cmp.f	d15,d4,d2
+.L84:
+	jnz.t	d15:2,.L5
+.L85:
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    75      else if(x<-y)       return -y;
+	rsub	d5,#0
+	itof	d2,d5
+.L86:
+	cmp.f	d15,d2,d4
+	and	d15,#6
+	cmovn	d2,d15,d4
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    76      else                return x;
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    77  }
+.L5:
+	ret
+.L56:
+	
+__limit_function_end:
+	.size	limit,__limit_function_end-limit
+.L38:
+	; End of function
+	
+	.sdecl	'.text.AICT_SimpleFunction.limit_ab',code,cluster('limit_ab')
+	.sect	'.text.AICT_SimpleFunction.limit_ab'
+	.align	2
+	
+	.global	limit_ab
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    78  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    79  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    80  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    81  //  @brief      双边限幅
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    82  //  @param      x				被限幅的数据
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    83  //  @param      a				限幅范围左边界
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    84  //  @param      b				限幅范围右边界
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    85  //  @return     float			限幅之后的数据
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    86  //  Sample usage:				sint16 dat = limit_ab(500,-300，400);//数据被限制在-300至+400之间  因此返回的结果是400
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    87  //-------------------------------------------------------------------------------------------------------------------
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    88  sint16 limit_ab(sint16 x, sint16 a, sint16 b)
+; Function limit_ab
+.L19:
+limit_ab:	.type	func
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    89  {
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    90      if(x<a) x = a;
+	max	d15,d4,d5
+.L91:
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    91      if(x>b) x = b;
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    92      return x;
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    93  }
+	min	d2,d15,d6
+	ret
+.L61:
+	
+__limit_ab_function_end:
+	.size	limit_ab,__limit_ab_function_end-limit_ab
+.L43:
+	; End of function
+	
+	.calls	'myabs','',0
+	.calls	'myfabs','',0
+	.calls	'my_delay','',0
+	.calls	'limit','',0
+	.calls	'limit_ab','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L21:
+	.word	407
+	.half	3
+	.word	.L22
+	.byte	4
+.L20:
+	.byte	1
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\Debug\\',0,12,1
+	.word	.L23
+.L49:
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	172
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	179
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	221
+	.byte	7
+	.word	221
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	237
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	242
+	.byte	9
+	.byte	'value',0
+	.word	221
+	.byte	9
+	.byte	'compare',0
+	.word	221
+	.byte	0
+.L53:
+	.byte	2
+	.byte	'long int',0,4,5
+.L55:
+	.byte	2
+	.byte	'float',0,4,4
+.L58:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L60:
+	.byte	2
+	.byte	'short int',0,2,5,10,1,7
+	.word	355
+	.byte	11
+	.byte	'__codeptr',0,1,1,1
+	.word	357
+	.byte	11
+	.byte	'uint16',0,2,109,29
+	.word	320
+	.byte	11
+	.byte	'sint16',0,2,126,29
+	.word	342
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,21,0,54,15,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L23:
+	.word	.L68-.L67
+.L67:
+	.half	3
+	.word	.L70-.L69
+.L69:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L70:
+.L68:
+	.sdecl	'.debug_info',debug,cluster('myabs')
+	.sect	'.debug_info'
+.L24:
+	.word	233
+	.half	3
+	.word	.L25
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\Debug\\',0,12,1
+	.word	.L27,.L26
+	.byte	2
+	.word	.L20
+	.byte	3
+	.byte	'myabs',0,1,36,6
+	.word	.L49
+	.byte	1,1,1
+	.word	.L11,.L50,.L10
+	.byte	4
+	.byte	'dat',0,1,36,16
+	.word	.L49,.L51
+	.byte	5
+	.word	.L11,.L50
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('myabs')
+	.sect	'.debug_abbrev'
+.L25:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('myabs')
+	.sect	'.debug_line'
+.L26:
+	.word	.L72-.L71
+.L71:
+	.half	3
+	.word	.L74-.L73
+.L73:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0,0,0,0,0
+.L74:
+	.byte	5,11,7,0,5,2
+	.word	.L11
+	.byte	3,37,1,5,1,3,2,1,7,9
+	.half	.L28-.L11
+	.byte	0,1,1
+.L72:
+	.sdecl	'.debug_ranges',debug,cluster('myabs')
+	.sect	'.debug_ranges'
+.L27:
+	.word	-1,.L11,0,.L28-.L11,0,0
+	.sdecl	'.debug_info',debug,cluster('my_delay')
+	.sect	'.debug_info'
+.L29:
+	.word	230
+	.half	3
+	.word	.L30
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\Debug\\',0,12,1
+	.word	.L32,.L31
+	.byte	2
+	.word	.L20
+	.byte	3
+	.byte	'my_delay',0,1,59,6,1,1,1
+	.word	.L15,.L52,.L14
+	.byte	4
+	.byte	't',0,1,59,20
+	.word	.L53,.L54
+	.byte	5
+	.word	.L15,.L52
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('my_delay')
+	.sect	'.debug_abbrev'
+.L30:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('my_delay')
+	.sect	'.debug_line'
+.L31:
+	.word	.L76-.L75
+.L75:
+	.half	3
+	.word	.L78-.L77
+.L77:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0,0,0,0,0
+.L78:
+	.byte	5,1,7,0,5,2
+	.word	.L15
+	.byte	3,61,1,7,9
+	.half	.L33-.L15
+	.byte	0,1,1
+.L76:
+	.sdecl	'.debug_ranges',debug,cluster('my_delay')
+	.sect	'.debug_ranges'
+.L32:
+	.word	-1,.L15,0,.L33-.L15,0,0
+	.sdecl	'.debug_info',debug,cluster('limit')
+	.sect	'.debug_info'
+.L34:
+	.word	245
+	.half	3
+	.word	.L35
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\Debug\\',0,12,1
+	.word	.L37,.L36
+	.byte	2
+	.word	.L20
+	.byte	3
+	.byte	'limit',0,1,72,7
+	.word	.L55
+	.byte	1,1,1
+	.word	.L17,.L56,.L16
+	.byte	4
+	.byte	'x',0,1,72,19
+	.word	.L55,.L57
+	.byte	4
+	.byte	'y',0,1,72,29
+	.word	.L58,.L59
+	.byte	5
+	.word	.L17,.L56
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('limit')
+	.sect	'.debug_abbrev'
+.L35:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('limit')
+	.sect	'.debug_line'
+.L36:
+	.word	.L80-.L79
+.L79:
+	.half	3
+	.word	.L82-.L81
+.L81:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0,0,0,0,0
+.L82:
+	.byte	5,10,7,0,5,2
+	.word	.L17
+	.byte	3,201,0,1,5,9,9
+	.half	.L83-.L17
+	.byte	1,5,5,9
+	.half	.L84-.L83
+	.byte	1,5,15,7,9
+	.half	.L85-.L84
+	.byte	3,1,1,5,14,9
+	.half	.L86-.L85
+	.byte	1,5,1,9
+	.half	.L5-.L86
+	.byte	3,2,1,7,9
+	.half	.L38-.L5
+	.byte	0,1,1
+.L80:
+	.sdecl	'.debug_ranges',debug,cluster('limit')
+	.sect	'.debug_ranges'
+.L37:
+	.word	-1,.L17,0,.L38-.L17,0,0
+	.sdecl	'.debug_info',debug,cluster('limit_ab')
+	.sect	'.debug_info'
+.L39:
+	.word	262
+	.half	3
+	.word	.L40
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\Debug\\',0,12,1
+	.word	.L42,.L41
+	.byte	2
+	.word	.L20
+	.byte	3
+	.byte	'limit_ab',0,1,88,8
+	.word	.L60
+	.byte	1,1,1
+	.word	.L19,.L61,.L18
+	.byte	4
+	.byte	'x',0,1,88,24
+	.word	.L60,.L62
+	.byte	4
+	.byte	'a',0,1,88,34
+	.word	.L60,.L63
+	.byte	4
+	.byte	'b',0,1,88,44
+	.word	.L60,.L64
+	.byte	5
+	.word	.L19,.L61
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('limit_ab')
+	.sect	'.debug_abbrev'
+.L40:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('limit_ab')
+	.sect	'.debug_line'
+.L41:
+	.word	.L88-.L87
+.L87:
+	.half	3
+	.word	.L90-.L89
+.L89:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0,0,0,0,0
+.L90:
+	.byte	5,9,7,0,5,2
+	.word	.L19
+	.byte	3,217,0,1,9
+	.half	.L91-.L19
+	.byte	3,1,1,5,1,3,2,1,7,9
+	.half	.L43-.L91
+	.byte	0,1,1
+.L88:
+	.sdecl	'.debug_ranges',debug,cluster('limit_ab')
+	.sect	'.debug_ranges'
+.L42:
+	.word	-1,.L19,0,.L43-.L19,0,0
+	.sdecl	'.debug_info',debug,cluster('myfabs')
+	.sect	'.debug_info'
+.L44:
+	.word	234
+	.half	3
+	.word	.L45
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\Debug\\',0,12,1
+	.word	.L47,.L46
+	.byte	2
+	.word	.L20
+	.byte	3
+	.byte	'myfabs',0,1,47,8
+	.word	.L55
+	.byte	1,1,1
+	.word	.L13,.L65,.L12
+	.byte	4
+	.byte	'dat',0,1,47,21
+	.word	.L55,.L66
+	.byte	5
+	.word	.L13,.L65
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('myfabs')
+	.sect	'.debug_abbrev'
+.L45:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('myfabs')
+	.sect	'.debug_line'
+.L46:
+	.word	.L93-.L92
+.L92:
+	.half	3
+	.word	.L95-.L94
+.L94:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\src\\AppSw\\Tricore\\APP\\AICT_SimpleFunction.c',0,0,0,0,0
+.L95:
+	.byte	5,11,7,0,5,2
+	.word	.L13
+	.byte	3,48,1,5,1,3,2,1,7,9
+	.half	.L48-.L13
+	.byte	0,1,1
+.L93:
+	.sdecl	'.debug_ranges',debug,cluster('myfabs')
+	.sect	'.debug_ranges'
+.L47:
+	.word	-1,.L13,0,.L48-.L13,0,0
+	.sdecl	'.debug_loc',debug,cluster('limit')
+	.sect	'.debug_loc'
+.L16:
+	.word	-1,.L17,0,.L56-.L17
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L57:
+	.word	-1,.L17,0,.L56-.L17
+	.half	1
+	.byte	84
+	.word	0,0
+.L59:
+	.word	-1,.L17,0,.L56-.L17
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('limit_ab')
+	.sect	'.debug_loc'
+.L63:
+	.word	-1,.L19,0,.L61-.L19
+	.half	1
+	.byte	85
+	.word	0,0
+.L64:
+	.word	-1,.L19,0,.L61-.L19
+	.half	1
+	.byte	86
+	.word	0,0
+.L18:
+	.word	-1,.L19,0,.L61-.L19
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L62:
+	.word	-1,.L19,0,.L61-.L19
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('my_delay')
+	.sect	'.debug_loc'
+.L14:
+	.word	-1,.L15,0,.L52-.L15
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L54:
+	.word	-1,.L15,0,.L52-.L15
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('myabs')
+	.sect	'.debug_loc'
+.L51:
+	.word	-1,.L11,0,.L50-.L11
+	.half	1
+	.byte	84
+	.word	0,0
+.L10:
+	.word	-1,.L11,0,.L50-.L11
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('myfabs')
+	.sect	'.debug_loc'
+.L66:
+	.word	-1,.L13,0,.L65-.L13
+	.half	1
+	.byte	84
+	.word	0,0
+.L12:
+	.word	-1,.L13,0,.L65-.L13
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L96:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('myabs')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L96,.L11,.L50-.L11
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('myfabs')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L96,.L13,.L65-.L13
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('my_delay')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L96,.L15,.L52-.L15
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('limit')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L96,.L17,.L56-.L17
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('limit_ab')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L96,.L19,.L61-.L19
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    94  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    95  
+; ..\src\AppSw\Tricore\APP\AICT_SimpleFunction.c	    96  
+
+	; Module end

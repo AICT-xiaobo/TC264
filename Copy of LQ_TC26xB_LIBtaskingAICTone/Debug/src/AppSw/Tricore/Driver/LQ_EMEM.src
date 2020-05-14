@@ -1,0 +1,5137 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99293038"
+	.compiler_invocation	"ctc --dep-file=src\\AppSw\\Tricore\\Driver\\.LQ_EMEM.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --iso=99 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\APP -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\Main -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr\\TC26B -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\If -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\APP -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\Main -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\AppSw\\Tricore\\Driver -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform\\Tricore -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr\\TC26B -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\If -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IE:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\AppSw\\Tricore\\Driver\\LQ_EMEM.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\AppSw\\Tricore\\Driver\\LQ_EMEM.src ..\\src\\AppSw\\Tricore\\Driver\\LQ_EMEM.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\AppSw\\Tricore\\Driver\\LQ_EMEM.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.LQ_EMEM.EMEM_InitConfig',code,cluster('EMEM_InitConfig')
+	.sect	'.text.LQ_EMEM.EMEM_InitConfig'
+	.align	2
+	
+	.global	EMEM_InitConfig
+
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	     1  /*!
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	     2    * @file     LQ_EMEM.c
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	     3    *
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	     4    * @brief    TC264 DA后缀的芯片才有EMEM的512K ram
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	     5    *
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	     6    * @company  北京龙邱智能科技
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	     7    *
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	     8    * @author   LQ-005
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	     9    *
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    10    * @note     Tab键 4个空格
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    11    *
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    12    * @version  V1.0
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    13    *
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    14    * @par URL  http://shop36265907.taobao.com
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    15    *           http://www.lqist.cn
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    16    *
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    17    * @date     2020年4月18日
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    18    */ 
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    19  
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    20  
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    21  
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    22  #include <IfxEmem.h>
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    23  #include "LQ_EMEM.h"
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    24  
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    25  /*************************************************************************
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    26  *  函数名称：EMEM_InitConfig(void)
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    27  *  功能说明：初始化芯片内部 EMEM内存  512K
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    28  *  参数说明：无
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    29  *  函数返回：无
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    30  *  修改时间：2020年3月10日
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    31  *  备    注：TC264 DA后缀的芯片才有EMEM的512K ram
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    32  *************************************************************************/
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    33  void EMEM_InitConfig(void)
+; Function EMEM_InitConfig
+.L5:
+EMEM_InitConfig:	.type	func
+
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    34  {
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    35  	IfxEmem_setClockEnableState(IfxEmem_State_enabled);
+	mov	d4,#1
+	call	IfxEmem_setClockEnableState
+.L48:
+
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    36  
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    37  	if (IfxEmem_LockedState_locked == IfxEmem_getLockedState())
+	call	IfxEmem_getLockedState
+.L49:
+	jne	d2,#0,.L2
+.L17:
+
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     1  /**
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     2   * \file IfxEmem.h
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     3   * \brief EMEM  basic functionality
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     4   * \ingroup IfxLld_Emem
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     5   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     6   * \version iLLD_1_0_1_11_0
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     7   * \copyright Copyright (c) 2018 Infineon Technologies AG. All rights reserved.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     8   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     9   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    10   *                                 IMPORTANT NOTICE
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    11   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    12   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    16   * terms of use are agreed, use of this file is subject to following:
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    17  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    18  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    20  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    22   * organization obtaining a copy of the software and accompanying 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    26   * Software is furnished to do so, all subject to the following:
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    27  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    28   * The copyright notices in the Software and this entire statement, including
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    32   * solely in the form of machine-executable object code generated by a source
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    33   * language processor.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    34  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    41   * DEALINGS IN THE SOFTWARE.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    42  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    43   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    44   * \defgroup IfxLld_Emem_Std_Enumerations Enumerations
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    45   * \ingroup IfxLld_Emem_Std
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    46   * \defgroup IfxLld_Emem_Std_Module Module Functions
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    47   * \ingroup IfxLld_Emem_Std
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    48   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    49  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    50  #ifndef IFXEMEM_H
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    51  #define IFXEMEM_H 1
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    52  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    53  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    54  /*----------------------------------Includes----------------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    55  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    56  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    57  #include "_Impl/IfxEmem_cfg.h"
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    58  #include "Scu/Std/IfxScuWdt.h"
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    59  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    60  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    61  /*--------------------------------Enumerations--------------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    62  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    63  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    64  /** \addtogroup IfxLld_Emem_Std_Enumerations
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    65   * \{ */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    66  /** \brief EMEM lock state defined in MODULE_EMEM.SBRCTR.B.STBLOCK.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    67   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    68  typedef enum
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    69  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    70      IfxEmem_LockedState_locked   = 0, /**< \brief EMEM locked state. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    71      IfxEmem_LockedState_unlocked = 1  /**< \brief EMEM unlocked state. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    72  } IfxEmem_LockedState;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    73  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    74  /** \brief EMEM module clock enabled or disabled state defined in MODULE_EMEM.CLC.B.DISR.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    75   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    76  typedef enum
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    77  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    78      IfxEmem_State_disabled = 0,  /**< \brief EMEM module clock disabled state. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    79      IfxEmem_State_enabled  = 1   /**< \brief EMEM module clock enabled state. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    80  } IfxEmem_State;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    81  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    82  /** \brief EMEM tile configuration mode defined in MODULE_EMEM.TILECONFIG.B.Tx( x = 0,1,..).
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    83   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    84  typedef enum
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    85  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    86      IfxEmem_TileConfigMode_calibMode = 0  /**< \brief EMEM tile mode to calibration memory. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    87  } IfxEmem_TileConfigMode;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    88  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    89  /** \brief Tile Number
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    90   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    91  typedef enum
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    92  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    93      IfxEmem_TileNumber_0 = 0,      /**< \brief Tile Number0  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    94      IfxEmem_TileNumber_1,          /**< \brief Tile Number1  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    95      IfxEmem_TileNumber_2,          /**< \brief Tile Number2  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    96      IfxEmem_TileNumber_3,          /**< \brief Tile Number3  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    97      IfxEmem_TileNumber_4,          /**< \brief Tile Number4  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    98      IfxEmem_TileNumber_5,          /**< \brief Tile Number5  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    99      IfxEmem_TileNumber_6,          /**< \brief Tile Number6  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   100      IfxEmem_TileNumber_7,          /**< \brief Tile Number7  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   101      IfxEmem_TileNumber_8,          /**< \brief Tile Number8  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   102      IfxEmem_TileNumber_9,          /**< \brief Tile Number9  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   103      IfxEmem_TileNumber_10,         /**< \brief Tile Number10  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   104      IfxEmem_TileNumber_11,         /**< \brief Tile Number11  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   105      IfxEmem_TileNumber_12,         /**< \brief Tile Number12  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   106      IfxEmem_TileNumber_13,         /**< \brief Tile Number13  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   107      IfxEmem_TileNumber_14,         /**< \brief Tile Number14  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   108      IfxEmem_TileNumber_15          /**< \brief Tile Number15  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   109  } IfxEmem_TileNumber;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   110  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   111  /** \} */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   112  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   113  /** \addtogroup IfxLld_Emem_Std_Module
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   114   * \{ */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   115  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   116  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   117  /*-------------------------Inline Function Prototypes-------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   118  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   119  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   120  /** \brief Returns the status of module enabled or disabled
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   121   * \return Status (TRUE / FALSE)
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   122   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   123  IFX_INLINE boolean IfxEmem_isModuleEnabled(void);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   124  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   125  /** \brief Sets all EMEM tiles to calibration memory mode.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   126   * \param mode EMEM tile configuration mode.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   127   * \param tile tile number
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   128   * \return None
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   129   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   130  IFX_INLINE void IfxEmem_setTileConfigMode(const IfxEmem_TileConfigMode mode, IfxEmem_TileNumber tile);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   131  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   132  /** \brief Sets Unlock standby lock flag.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   133   * \param flag Unlock standby lock flag value.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   134   * \return None
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   135   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   136  IFX_INLINE void IfxEmem_setUnlockStandbyLockFlag(const uint8 flag);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   137  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   138  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   139  /*-------------------------Global Function Prototypes-------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   140  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   141  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   142  /** \brief Gets the EMEM stand RAM lock state.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   143   * \return EMEM stand RAM lock state.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   144   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   145  IFX_EXTERN IfxEmem_LockedState IfxEmem_getLockedState(void);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   146  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   147  /** \brief Sets state of the EMEM module clock.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   148   * Note: Do not use this API for enabling and disabling EMEM without handling Endinit protection in application.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   149   * for complete enable and disable of EMEM with endint protection handling, please use the following APIs
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   150   * /ref IfxEmem_enableModule
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   151   * /ref IfxEmem_disableModule
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   152   * \param state EMEM module clock enabled or disabled state.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   153   * \return None
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   154   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   155  IFX_EXTERN void IfxEmem_setClockEnableState(const IfxEmem_State state);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   156  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   157  /** \} */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   158  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   159  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   160  /*---------------------Inline Function Implementations------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   161  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   162  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   163  IFX_INLINE boolean IfxEmem_isModuleEnabled(void)
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   164  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   165      return (MODULE_EMEM.CLC.B.DISS == 0) ? TRUE : FALSE;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   166  }
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   167  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   168  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   169  IFX_INLINE void IfxEmem_setTileConfigMode(const IfxEmem_TileConfigMode mode, IfxEmem_TileNumber tile)
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   170  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   171      uint32 shift = tile * 2;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   172      uint32 mask  = ~(0x3 << shift);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   173      uint32 value = (uint32)mode << shift;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   174      MODULE_EMEM.TILECONFIG.U = (MODULE_EMEM.TILESTATE.U & mask) | value;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   175  }
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   176  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   177  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   178  IFX_INLINE void IfxEmem_setUnlockStandbyLockFlag(const uint8 flag)
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   179  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   180      if (8 > flag)
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   181      {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   182          MODULE_EMEM.SBRCTR.B.STBULK = flag;
+	movh.a	a15,#63758
+	lea	a15,[a15]@los(0xf90e6034)
+	ld.w	d15,[a15]
+.L50:
+	insert	d15,d15,#1,#1,#3
+	st.w	[a15],d15
+.L18:
+	ld.w	d15,[a15]
+.L51:
+	insert	d15,d15,#3,#1,#3
+	st.w	[a15],d15
+.L22:
+	ld.w	d15,[a15]
+.L52:
+	or	d15,#14
+	st.w	[a15],d15
+.L23:
+
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    38  	{
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    39  		/* apply unlock sequence */
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    40  		IfxEmem_setUnlockStandbyLockFlag(0x1);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    41  		IfxEmem_setUnlockStandbyLockFlag(0x3);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    42  		IfxEmem_setUnlockStandbyLockFlag(0x7);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    43  		/* wait one cycle for unlock */
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    44  
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    45  		for(int i = 0; i < 1000; i++)
+	lea	a15,999
+.L3:
+
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    46  		{
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    47  			__asm("NOP");
+	NOP
+.L53:
+	loop	a15,.L3
+.L2:
+
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     1  /**
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     2   * \file IfxEmem.h
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     3   * \brief EMEM  basic functionality
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     4   * \ingroup IfxLld_Emem
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     5   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     6   * \version iLLD_1_0_1_11_0
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     7   * \copyright Copyright (c) 2018 Infineon Technologies AG. All rights reserved.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     8   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	     9   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    10   *                                 IMPORTANT NOTICE
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    11   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    12   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    16   * terms of use are agreed, use of this file is subject to following:
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    17  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    18  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    20  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    22   * organization obtaining a copy of the software and accompanying 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    26   * Software is furnished to do so, all subject to the following:
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    27  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    28   * The copyright notices in the Software and this entire statement, including
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    32   * solely in the form of machine-executable object code generated by a source
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    33   * language processor.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    34  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    41   * DEALINGS IN THE SOFTWARE.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    42  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    43   *
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    44   * \defgroup IfxLld_Emem_Std_Enumerations Enumerations
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    45   * \ingroup IfxLld_Emem_Std
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    46   * \defgroup IfxLld_Emem_Std_Module Module Functions
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    47   * \ingroup IfxLld_Emem_Std
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    48   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    49  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    50  #ifndef IFXEMEM_H
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    51  #define IFXEMEM_H 1
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    52  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    53  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    54  /*----------------------------------Includes----------------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    55  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    56  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    57  #include "_Impl/IfxEmem_cfg.h"
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    58  #include "Scu/Std/IfxScuWdt.h"
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    59  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    60  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    61  /*--------------------------------Enumerations--------------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    62  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    63  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    64  /** \addtogroup IfxLld_Emem_Std_Enumerations
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    65   * \{ */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    66  /** \brief EMEM lock state defined in MODULE_EMEM.SBRCTR.B.STBLOCK.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    67   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    68  typedef enum
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    69  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    70      IfxEmem_LockedState_locked   = 0, /**< \brief EMEM locked state. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    71      IfxEmem_LockedState_unlocked = 1  /**< \brief EMEM unlocked state. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    72  } IfxEmem_LockedState;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    73  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    74  /** \brief EMEM module clock enabled or disabled state defined in MODULE_EMEM.CLC.B.DISR.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    75   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    76  typedef enum
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    77  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    78      IfxEmem_State_disabled = 0,  /**< \brief EMEM module clock disabled state. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    79      IfxEmem_State_enabled  = 1   /**< \brief EMEM module clock enabled state. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    80  } IfxEmem_State;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    81  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    82  /** \brief EMEM tile configuration mode defined in MODULE_EMEM.TILECONFIG.B.Tx( x = 0,1,..).
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    83   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    84  typedef enum
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    85  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    86      IfxEmem_TileConfigMode_calibMode = 0  /**< \brief EMEM tile mode to calibration memory. */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    87  } IfxEmem_TileConfigMode;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    88  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    89  /** \brief Tile Number
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    90   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    91  typedef enum
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    92  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    93      IfxEmem_TileNumber_0 = 0,      /**< \brief Tile Number0  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    94      IfxEmem_TileNumber_1,          /**< \brief Tile Number1  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    95      IfxEmem_TileNumber_2,          /**< \brief Tile Number2  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    96      IfxEmem_TileNumber_3,          /**< \brief Tile Number3  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    97      IfxEmem_TileNumber_4,          /**< \brief Tile Number4  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    98      IfxEmem_TileNumber_5,          /**< \brief Tile Number5  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	    99      IfxEmem_TileNumber_6,          /**< \brief Tile Number6  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   100      IfxEmem_TileNumber_7,          /**< \brief Tile Number7  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   101      IfxEmem_TileNumber_8,          /**< \brief Tile Number8  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   102      IfxEmem_TileNumber_9,          /**< \brief Tile Number9  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   103      IfxEmem_TileNumber_10,         /**< \brief Tile Number10  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   104      IfxEmem_TileNumber_11,         /**< \brief Tile Number11  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   105      IfxEmem_TileNumber_12,         /**< \brief Tile Number12  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   106      IfxEmem_TileNumber_13,         /**< \brief Tile Number13  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   107      IfxEmem_TileNumber_14,         /**< \brief Tile Number14  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   108      IfxEmem_TileNumber_15          /**< \brief Tile Number15  */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   109  } IfxEmem_TileNumber;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   110  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   111  /** \} */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   112  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   113  /** \addtogroup IfxLld_Emem_Std_Module
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   114   * \{ */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   115  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   116  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   117  /*-------------------------Inline Function Prototypes-------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   118  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   119  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   120  /** \brief Returns the status of module enabled or disabled
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   121   * \return Status (TRUE / FALSE)
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   122   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   123  IFX_INLINE boolean IfxEmem_isModuleEnabled(void);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   124  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   125  /** \brief Sets all EMEM tiles to calibration memory mode.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   126   * \param mode EMEM tile configuration mode.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   127   * \param tile tile number
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   128   * \return None
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   129   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   130  IFX_INLINE void IfxEmem_setTileConfigMode(const IfxEmem_TileConfigMode mode, IfxEmem_TileNumber tile);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   131  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   132  /** \brief Sets Unlock standby lock flag.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   133   * \param flag Unlock standby lock flag value.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   134   * \return None
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   135   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   136  IFX_INLINE void IfxEmem_setUnlockStandbyLockFlag(const uint8 flag);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   137  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   138  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   139  /*-------------------------Global Function Prototypes-------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   140  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   141  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   142  /** \brief Gets the EMEM stand RAM lock state.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   143   * \return EMEM stand RAM lock state.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   144   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   145  IFX_EXTERN IfxEmem_LockedState IfxEmem_getLockedState(void);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   146  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   147  /** \brief Sets state of the EMEM module clock.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   148   * Note: Do not use this API for enabling and disabling EMEM without handling Endinit protection in application.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   149   * for complete enable and disable of EMEM with endint protection handling, please use the following APIs
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   150   * /ref IfxEmem_enableModule
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   151   * /ref IfxEmem_disableModule
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   152   * \param state EMEM module clock enabled or disabled state.
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   153   * \return None
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   154   */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   155  IFX_EXTERN void IfxEmem_setClockEnableState(const IfxEmem_State state);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   156  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   157  /** \} */
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   158  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   159  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   160  /*---------------------Inline Function Implementations------------------------*/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   161  /******************************************************************************/
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   162  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   163  IFX_INLINE boolean IfxEmem_isModuleEnabled(void)
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   164  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   165      return (MODULE_EMEM.CLC.B.DISS == 0) ? TRUE : FALSE;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   166  }
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   167  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   168  
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   169  IFX_INLINE void IfxEmem_setTileConfigMode(const IfxEmem_TileConfigMode mode, IfxEmem_TileNumber tile)
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   170  {
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   171      uint32 shift = tile * 2;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   172      uint32 mask  = ~(0x3 << shift);
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   173      uint32 value = (uint32)mode << shift;
+; E:\tasking workspace\Copy of LQ_TC26xB_LIBtaskingAICTone\src\BaseSw\iLLD\TC26B\Tricore\Emem\Std\IfxEmem.h	   174      MODULE_EMEM.TILECONFIG.U = (MODULE_EMEM.TILESTATE.U & mask) | value;
+	movh.a	a15,#63758
+	lea	a15,[a15]@los(0xf90e602c)
+.L54:
+	movh.a	a2,#63758
+.L55:
+	ld.w	d15,[a15]
+.L56:
+	lea	a2,[a2]@los(0xf90e6020)
+.L57:
+	insert	d15,d15,#0,#0,#2
+	st.w	[a2],d15
+.L27:
+	ld.w	d15,[a15]
+.L58:
+	insert	d15,d15,#0,#2,#2
+	st.w	[a2],d15
+.L33:
+	ld.w	d15,[a15]
+.L59:
+	insert	d15,d15,#0,#4,#2
+	st.w	[a2],d15
+.L34:
+	ld.w	d15,[a15]
+.L60:
+	insert	d15,d15,#0,#6,#2
+	st.w	[a2],d15
+.L35:
+	ld.w	d15,[a15]
+.L61:
+	insert	d15,d15,#0,#8,#2
+	st.w	[a2],d15
+.L36:
+	ld.w	d15,[a15]
+.L62:
+	insert	d15,d15,#0,#10,#2
+	st.w	[a2],d15
+.L37:
+	ld.w	d15,[a15]
+.L63:
+	insert	d15,d15,#0,#12,#2
+	st.w	[a2],d15
+.L38:
+	ld.w	d15,[a15]
+.L64:
+	insert	d15,d15,#0,#14,#2
+	st.w	[a2],d15
+.L39:
+
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    48  		}
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    49  	}
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    50  
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    51  	IfxEmem_setTileConfigMode(IfxEmem_TileConfigMode_calibMode,IfxEmem_TileNumber_0);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    52  	IfxEmem_setTileConfigMode(IfxEmem_TileConfigMode_calibMode,IfxEmem_TileNumber_1);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    53  	IfxEmem_setTileConfigMode(IfxEmem_TileConfigMode_calibMode,IfxEmem_TileNumber_2);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    54  	IfxEmem_setTileConfigMode(IfxEmem_TileConfigMode_calibMode,IfxEmem_TileNumber_3);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    55  	IfxEmem_setTileConfigMode(IfxEmem_TileConfigMode_calibMode,IfxEmem_TileNumber_4);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    56  	IfxEmem_setTileConfigMode(IfxEmem_TileConfigMode_calibMode,IfxEmem_TileNumber_5);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    57  	IfxEmem_setTileConfigMode(IfxEmem_TileConfigMode_calibMode,IfxEmem_TileNumber_6);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    58  	IfxEmem_setTileConfigMode(IfxEmem_TileConfigMode_calibMode,IfxEmem_TileNumber_7);
+; ..\src\AppSw\Tricore\Driver\LQ_EMEM.c	    59  }
+	ret
+.L15:
+	
+__EMEM_InitConfig_function_end:
+	.size	EMEM_InitConfig,__EMEM_InitConfig_function_end-EMEM_InitConfig
+.L14:
+	; End of function
+	
+	.calls	'EMEM_InitConfig','IfxEmem_setClockEnableState'
+	.calls	'EMEM_InitConfig','IfxEmem_getLockedState'
+	.extern	IfxEmem_getLockedState
+	.extern	IfxEmem_setClockEnableState
+	.calls	'EMEM_InitConfig','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L7:
+	.word	29827
+	.half	3
+	.word	.L8
+	.byte	4
+.L6:
+	.byte	1
+	.byte	'..\\src\\AppSw\\Tricore\\Driver\\LQ_EMEM.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\Debug\\',0,12,1
+	.word	.L9
+	.byte	2,1,1,3
+	.word	163
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	166
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	211
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	223
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	303
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	277
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	309
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	309
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	277
+	.byte	6,0,10,3,84,9,1,11
+	.byte	'IfxEmem_TileConfigMode_calibMode',0,0,0,12
+	.word	395
+	.byte	10,3,91,9,1,11
+	.byte	'IfxEmem_TileNumber_0',0,0,11
+	.byte	'IfxEmem_TileNumber_1',0,1,11
+	.byte	'IfxEmem_TileNumber_2',0,2,11
+	.byte	'IfxEmem_TileNumber_3',0,3,11
+	.byte	'IfxEmem_TileNumber_4',0,4,11
+	.byte	'IfxEmem_TileNumber_5',0,5,11
+	.byte	'IfxEmem_TileNumber_6',0,6,11
+	.byte	'IfxEmem_TileNumber_7',0,7,11
+	.byte	'IfxEmem_TileNumber_8',0,8,11
+	.byte	'IfxEmem_TileNumber_9',0,9,11
+	.byte	'IfxEmem_TileNumber_10',0,10,11
+	.byte	'IfxEmem_TileNumber_11',0,11,11
+	.byte	'IfxEmem_TileNumber_12',0,12,11
+	.byte	'IfxEmem_TileNumber_13',0,13,11
+	.byte	'IfxEmem_TileNumber_14',0,14,11
+	.byte	'IfxEmem_TileNumber_15',0,15,0
+.L26:
+	.byte	4
+	.byte	'IfxEmem_setTileConfigMode',0,3,3,169,1,17,1,1
+.L28:
+	.byte	5
+	.byte	'mode',0,3,169,1,72
+	.word	436
+.L30:
+	.byte	5
+	.byte	'tile',0,3,169,1,97
+	.word	441
+.L32:
+	.byte	6,0,7
+	.byte	'unsigned char',0,1,8,12
+	.word	885
+.L16:
+	.byte	4
+	.byte	'IfxEmem_setUnlockStandbyLockFlag',0,3,3,178,1,17,1,1
+.L19:
+	.byte	5
+	.byte	'flag',0,3,178,1,62
+	.word	902
+.L21:
+	.byte	6,0
+.L24:
+	.byte	7
+	.byte	'int',0,4,5,12
+	.word	964
+	.byte	13
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,14
+	.word	971
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,15
+	.word	1013
+	.byte	3
+	.word	1013
+	.byte	16
+	.byte	'__cmpswapw',0
+	.word	1029
+	.byte	1,1,1,1,17
+	.byte	'p',0
+	.word	1034
+	.byte	17
+	.byte	'value',0
+	.word	1013
+	.byte	17
+	.byte	'compare',0
+	.word	1013
+	.byte	0,18
+	.word	171
+	.byte	19
+	.word	197
+	.byte	6,0,18
+	.word	232
+	.byte	19
+	.word	264
+	.byte	6,0,18
+	.word	314
+	.byte	19
+	.word	333
+	.byte	6,0,18
+	.word	349
+	.byte	19
+	.word	364
+	.byte	19
+	.word	378
+	.byte	6,0,18
+	.word	821
+	.byte	19
+	.word	855
+	.byte	19
+	.word	869
+	.byte	6,0,18
+	.word	907
+	.byte	19
+	.word	948
+	.byte	6,0,10,3,68,9,1,11
+	.byte	'IfxEmem_LockedState_locked',0,0,11
+	.byte	'IfxEmem_LockedState_unlocked',0,1,0,20
+	.byte	'IfxEmem_getLockedState',0,3,145,1,32
+	.word	1173
+	.byte	1,1,1,1,10,3,76,9,1,11
+	.byte	'IfxEmem_State_disabled',0,0,11
+	.byte	'IfxEmem_State_enabled',0,1,0,12
+	.word	1275
+	.byte	21
+	.byte	'IfxEmem_setClockEnableState',0,3,155,1,17,1,1,1,1,5
+	.byte	'state',0,3,155,1,65
+	.word	1330
+	.byte	0,7
+	.byte	'short int',0,2,5,22
+	.byte	'__wchar_t',0,4,1,1
+	.word	1388
+	.byte	22
+	.byte	'__size_t',0,4,1,1
+	.word	1013
+	.byte	22
+	.byte	'__ptrdiff_t',0,4,1,1
+	.word	964
+	.byte	23,1,3
+	.word	1456
+	.byte	22
+	.byte	'__codeptr',0,4,1,1
+	.word	1458
+	.byte	22
+	.byte	'boolean',0,5,101,29
+	.word	885
+	.byte	22
+	.byte	'uint8',0,5,105,29
+	.word	885
+	.byte	7
+	.byte	'unsigned short int',0,2,7,22
+	.byte	'uint16',0,5,109,29
+	.word	1511
+	.byte	7
+	.byte	'unsigned long int',0,4,7,22
+	.byte	'uint32',0,5,113,29
+	.word	1548
+	.byte	22
+	.byte	'uint64',0,5,118,29
+	.word	277
+	.byte	22
+	.byte	'sint16',0,5,126,29
+	.word	1388
+	.byte	7
+	.byte	'long int',0,4,5,22
+	.byte	'sint32',0,5,131,1,29
+	.word	1614
+	.byte	7
+	.byte	'long long int',0,8,5,22
+	.byte	'sint64',0,5,139,1,29
+	.word	1642
+	.byte	22
+	.byte	'float32',0,5,168,1,29
+	.word	223
+	.byte	22
+	.byte	'pvoid',0,6,57,28
+	.word	309
+	.byte	22
+	.byte	'Ifx_TickTime',0,6,79,28
+	.word	1642
+	.byte	7
+	.byte	'unsigned int',0,4,7,24
+	.byte	'_Ifx_EMEM_CLC_Bits',0,7,45,16,4,25
+	.byte	'DISR',0,4
+	.word	1727
+	.byte	1,31,2,35,0,25
+	.byte	'DISS',0,4
+	.word	1727
+	.byte	1,30,2,35,0,25
+	.byte	'reserved_2',0,4
+	.word	1727
+	.byte	30,0,2,35,0,0,22
+	.byte	'Ifx_EMEM_CLC_Bits',0,7,50,3
+	.word	1743
+	.byte	24
+	.byte	'_Ifx_EMEM_ID_Bits',0,7,53,16,4,25
+	.byte	'MOD_REV',0,4
+	.word	1727
+	.byte	8,24,2,35,0,25
+	.byte	'MOD_TYPE',0,4
+	.word	1727
+	.byte	8,16,2,35,0,25
+	.byte	'MODNUMBER',0,4
+	.word	1727
+	.byte	16,0,2,35,0,0,22
+	.byte	'Ifx_EMEM_ID_Bits',0,7,58,3
+	.word	1848
+	.byte	24
+	.byte	'_Ifx_EMEM_SBRCTR_Bits',0,7,61,16,4,25
+	.byte	'STBLOCK',0,4
+	.word	1727
+	.byte	1,31,2,35,0,25
+	.byte	'STBULK',0,4
+	.word	1727
+	.byte	3,28,2,35,0,25
+	.byte	'STBSLK',0,4
+	.word	1727
+	.byte	4,24,2,35,0,25
+	.byte	'ACGSXCM0',0,4
+	.word	1727
+	.byte	1,23,2,35,0,25
+	.byte	'reserved_9',0,4
+	.word	1727
+	.byte	3,20,2,35,0,25
+	.byte	'ACGEN',0,4
+	.word	1727
+	.byte	1,19,2,35,0,25
+	.byte	'ACGSXTM0',0,4
+	.word	1727
+	.byte	1,18,2,35,0,25
+	.byte	'ACGSXTM1',0,4
+	.word	1727
+	.byte	1,17,2,35,0,25
+	.byte	'reserved_15',0,4
+	.word	1727
+	.byte	1,16,2,35,0,25
+	.byte	'ACGST0',0,4
+	.word	1727
+	.byte	1,15,2,35,0,25
+	.byte	'ACGST1',0,4
+	.word	1727
+	.byte	1,14,2,35,0,25
+	.byte	'ACGST2',0,4
+	.word	1727
+	.byte	1,13,2,35,0,25
+	.byte	'ACGST3',0,4
+	.word	1727
+	.byte	1,12,2,35,0,25
+	.byte	'ACGST4',0,4
+	.word	1727
+	.byte	1,11,2,35,0,25
+	.byte	'ACGST5',0,4
+	.word	1727
+	.byte	1,10,2,35,0,25
+	.byte	'ACGST6',0,4
+	.word	1727
+	.byte	1,9,2,35,0,25
+	.byte	'ACGST7',0,4
+	.word	1727
+	.byte	1,8,2,35,0,25
+	.byte	'ACGST8',0,4
+	.word	1727
+	.byte	1,7,2,35,0,25
+	.byte	'ACGST9',0,4
+	.word	1727
+	.byte	1,6,2,35,0,25
+	.byte	'ACGST10',0,4
+	.word	1727
+	.byte	1,5,2,35,0,25
+	.byte	'ACGST11',0,4
+	.word	1727
+	.byte	1,4,2,35,0,25
+	.byte	'ACGST12',0,4
+	.word	1727
+	.byte	1,3,2,35,0,25
+	.byte	'ACGST13',0,4
+	.word	1727
+	.byte	1,2,2,35,0,25
+	.byte	'ACGST14',0,4
+	.word	1727
+	.byte	1,1,2,35,0,25
+	.byte	'ACGST15',0,4
+	.word	1727
+	.byte	1,0,2,35,0,0,22
+	.byte	'Ifx_EMEM_SBRCTR_Bits',0,7,88,3
+	.word	1957
+	.byte	24
+	.byte	'_Ifx_EMEM_TILECC_Bits',0,7,91,16,4,25
+	.byte	'T0',0,4
+	.word	1727
+	.byte	1,31,2,35,0,25
+	.byte	'T1',0,4
+	.word	1727
+	.byte	1,30,2,35,0,25
+	.byte	'T2',0,4
+	.word	1727
+	.byte	1,29,2,35,0,25
+	.byte	'T3',0,4
+	.word	1727
+	.byte	1,28,2,35,0,25
+	.byte	'T4',0,4
+	.word	1727
+	.byte	1,27,2,35,0,25
+	.byte	'T5',0,4
+	.word	1727
+	.byte	1,26,2,35,0,25
+	.byte	'T6',0,4
+	.word	1727
+	.byte	1,25,2,35,0,25
+	.byte	'T7',0,4
+	.word	1727
+	.byte	1,24,2,35,0,25
+	.byte	'T8',0,4
+	.word	1727
+	.byte	1,23,2,35,0,25
+	.byte	'T9',0,4
+	.word	1727
+	.byte	1,22,2,35,0,25
+	.byte	'T10',0,4
+	.word	1727
+	.byte	1,21,2,35,0,25
+	.byte	'T11',0,4
+	.word	1727
+	.byte	1,20,2,35,0,25
+	.byte	'T12',0,4
+	.word	1727
+	.byte	1,19,2,35,0,25
+	.byte	'T13',0,4
+	.word	1727
+	.byte	1,18,2,35,0,25
+	.byte	'T14',0,4
+	.word	1727
+	.byte	1,17,2,35,0,25
+	.byte	'T15',0,4
+	.word	1727
+	.byte	1,16,2,35,0,25
+	.byte	'XTM0',0,4
+	.word	1727
+	.byte	1,15,2,35,0,25
+	.byte	'XTM1',0,4
+	.word	1727
+	.byte	1,14,2,35,0,25
+	.byte	'reserved_18',0,4
+	.word	1727
+	.byte	14,0,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILECC_Bits',0,7,112,3
+	.word	2485
+	.byte	24
+	.byte	'_Ifx_EMEM_TILECONFIG_Bits',0,7,115,16,4,25
+	.byte	'T0',0,4
+	.word	1727
+	.byte	2,30,2,35,0,25
+	.byte	'T1',0,4
+	.word	1727
+	.byte	2,28,2,35,0,25
+	.byte	'T2',0,4
+	.word	1727
+	.byte	2,26,2,35,0,25
+	.byte	'T3',0,4
+	.word	1727
+	.byte	2,24,2,35,0,25
+	.byte	'T4',0,4
+	.word	1727
+	.byte	2,22,2,35,0,25
+	.byte	'T5',0,4
+	.word	1727
+	.byte	2,20,2,35,0,25
+	.byte	'T6',0,4
+	.word	1727
+	.byte	2,18,2,35,0,25
+	.byte	'T7',0,4
+	.word	1727
+	.byte	2,16,2,35,0,25
+	.byte	'T8',0,4
+	.word	1727
+	.byte	2,14,2,35,0,25
+	.byte	'T9',0,4
+	.word	1727
+	.byte	2,12,2,35,0,25
+	.byte	'T10',0,4
+	.word	1727
+	.byte	2,10,2,35,0,25
+	.byte	'T11',0,4
+	.word	1727
+	.byte	2,8,2,35,0,25
+	.byte	'T12',0,4
+	.word	1727
+	.byte	2,6,2,35,0,25
+	.byte	'T13',0,4
+	.word	1727
+	.byte	2,4,2,35,0,25
+	.byte	'T14',0,4
+	.word	1727
+	.byte	2,2,2,35,0,25
+	.byte	'T15',0,4
+	.word	1727
+	.byte	2,0,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILECONFIG_Bits',0,7,133,1,3
+	.word	2827
+	.byte	24
+	.byte	'_Ifx_EMEM_TILECONFIGXM_Bits',0,7,136,1,16,4,25
+	.byte	'XCM0',0,4
+	.word	1727
+	.byte	2,30,2,35,0,25
+	.byte	'reserved_2',0,4
+	.word	1727
+	.byte	14,16,2,35,0,25
+	.byte	'XTM0',0,4
+	.word	1727
+	.byte	2,14,2,35,0,25
+	.byte	'XTM1',0,4
+	.word	1727
+	.byte	2,12,2,35,0,25
+	.byte	'reserved_20',0,4
+	.word	1727
+	.byte	12,0,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILECONFIGXM_Bits',0,7,143,1,3
+	.word	3123
+	.byte	24
+	.byte	'_Ifx_EMEM_TILECT_Bits',0,7,146,1,16,4,25
+	.byte	'T0',0,4
+	.word	1727
+	.byte	1,31,2,35,0,25
+	.byte	'T1',0,4
+	.word	1727
+	.byte	1,30,2,35,0,25
+	.byte	'T2',0,4
+	.word	1727
+	.byte	1,29,2,35,0,25
+	.byte	'T3',0,4
+	.word	1727
+	.byte	1,28,2,35,0,25
+	.byte	'T4',0,4
+	.word	1727
+	.byte	1,27,2,35,0,25
+	.byte	'T5',0,4
+	.word	1727
+	.byte	1,26,2,35,0,25
+	.byte	'T6',0,4
+	.word	1727
+	.byte	1,25,2,35,0,25
+	.byte	'T7',0,4
+	.word	1727
+	.byte	1,24,2,35,0,25
+	.byte	'T8',0,4
+	.word	1727
+	.byte	1,23,2,35,0,25
+	.byte	'T9',0,4
+	.word	1727
+	.byte	1,22,2,35,0,25
+	.byte	'T10',0,4
+	.word	1727
+	.byte	1,21,2,35,0,25
+	.byte	'T11',0,4
+	.word	1727
+	.byte	1,20,2,35,0,25
+	.byte	'T12',0,4
+	.word	1727
+	.byte	1,19,2,35,0,25
+	.byte	'T13',0,4
+	.word	1727
+	.byte	1,18,2,35,0,25
+	.byte	'T14',0,4
+	.word	1727
+	.byte	1,17,2,35,0,25
+	.byte	'T15',0,4
+	.word	1727
+	.byte	1,16,2,35,0,25
+	.byte	'XTM0',0,4
+	.word	1727
+	.byte	1,15,2,35,0,25
+	.byte	'XTM1',0,4
+	.word	1727
+	.byte	1,14,2,35,0,25
+	.byte	'reserved_18',0,4
+	.word	1727
+	.byte	14,0,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILECT_Bits',0,7,167,1,3
+	.word	3287
+	.byte	24
+	.byte	'_Ifx_EMEM_TILESTATE_Bits',0,7,170,1,16,4,25
+	.byte	'TILE0',0,4
+	.word	1727
+	.byte	2,30,2,35,0,25
+	.byte	'TILE1',0,4
+	.word	1727
+	.byte	2,28,2,35,0,25
+	.byte	'TILE2',0,4
+	.word	1727
+	.byte	2,26,2,35,0,25
+	.byte	'TILE3',0,4
+	.word	1727
+	.byte	2,24,2,35,0,25
+	.byte	'TILE4',0,4
+	.word	1727
+	.byte	2,22,2,35,0,25
+	.byte	'TILE5',0,4
+	.word	1727
+	.byte	2,20,2,35,0,25
+	.byte	'TILE6',0,4
+	.word	1727
+	.byte	2,18,2,35,0,25
+	.byte	'TILE7',0,4
+	.word	1727
+	.byte	2,16,2,35,0,25
+	.byte	'TILE8',0,4
+	.word	1727
+	.byte	2,14,2,35,0,25
+	.byte	'TILE9',0,4
+	.word	1727
+	.byte	2,12,2,35,0,25
+	.byte	'TILE10',0,4
+	.word	1727
+	.byte	2,10,2,35,0,25
+	.byte	'TILE11',0,4
+	.word	1727
+	.byte	2,8,2,35,0,25
+	.byte	'TILE12',0,4
+	.word	1727
+	.byte	2,6,2,35,0,25
+	.byte	'TILE13',0,4
+	.word	1727
+	.byte	2,4,2,35,0,25
+	.byte	'TILE14',0,4
+	.word	1727
+	.byte	2,2,2,35,0,25
+	.byte	'TILE15',0,4
+	.word	1727
+	.byte	2,0,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILESTATE_Bits',0,7,188,1,3
+	.word	3631
+	.byte	24
+	.byte	'_Ifx_EMEM_TILESTATEXM_Bits',0,7,191,1,16,4,25
+	.byte	'XCM0',0,4
+	.word	1727
+	.byte	2,30,2,35,0,25
+	.byte	'reserved_2',0,4
+	.word	1727
+	.byte	14,16,2,35,0,25
+	.byte	'XTM0',0,4
+	.word	1727
+	.byte	2,14,2,35,0,25
+	.byte	'XTM1',0,4
+	.word	1727
+	.byte	2,12,2,35,0,25
+	.byte	'reserved_20',0,4
+	.word	1727
+	.byte	12,0,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILESTATEXM_Bits',0,7,198,1,3
+	.word	3974
+	.byte	26,7,206,1,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	1743
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_EMEM_CLC',0,7,211,1,3
+	.word	4136
+	.byte	26,7,214,1,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	1848
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_EMEM_ID',0,7,219,1,3
+	.word	4198
+	.byte	26,7,222,1,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	1957
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_EMEM_SBRCTR',0,7,227,1,3
+	.word	4259
+	.byte	26,7,230,1,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	2485
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILECC',0,7,235,1,3
+	.word	4324
+	.byte	26,7,238,1,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	2827
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILECONFIG',0,7,243,1,3
+	.word	4389
+	.byte	26,7,246,1,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	3123
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILECONFIGXM',0,7,251,1,3
+	.word	4458
+	.byte	26,7,254,1,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	3287
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILECT',0,7,131,2,3
+	.word	4529
+	.byte	26,7,134,2,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	3631
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILESTATE',0,7,139,2,3
+	.word	4594
+	.byte	26,7,142,2,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	3974
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_EMEM_TILESTATEXM',0,7,147,2,3
+	.word	4662
+	.byte	10,8,250,10,9,1,11
+	.byte	'IfxScu_WDTCON1_IR_divBy16384',0,0,11
+	.byte	'IfxScu_WDTCON1_IR_divBy256',0,1,11
+	.byte	'IfxScu_WDTCON1_IR_divBy64',0,2,0,22
+	.byte	'IfxScu_WDTCON1_IR',0,8,255,10,3
+	.word	4732
+	.byte	24
+	.byte	'_Ifx_SCU_ACCEN0_Bits',0,9,45,16,4,25
+	.byte	'EN0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'EN1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'EN2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'EN3',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'EN4',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'EN5',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'EN6',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'EN7',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'EN8',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'EN9',0,1
+	.word	885
+	.byte	1,6,2,35,1,25
+	.byte	'EN10',0,1
+	.word	885
+	.byte	1,5,2,35,1,25
+	.byte	'EN11',0,1
+	.word	885
+	.byte	1,4,2,35,1,25
+	.byte	'EN12',0,1
+	.word	885
+	.byte	1,3,2,35,1,25
+	.byte	'EN13',0,1
+	.word	885
+	.byte	1,2,2,35,1,25
+	.byte	'EN14',0,1
+	.word	885
+	.byte	1,1,2,35,1,25
+	.byte	'EN15',0,1
+	.word	885
+	.byte	1,0,2,35,1,25
+	.byte	'EN16',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'EN17',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'EN18',0,1
+	.word	885
+	.byte	1,5,2,35,2,25
+	.byte	'EN19',0,1
+	.word	885
+	.byte	1,4,2,35,2,25
+	.byte	'EN20',0,1
+	.word	885
+	.byte	1,3,2,35,2,25
+	.byte	'EN21',0,1
+	.word	885
+	.byte	1,2,2,35,2,25
+	.byte	'EN22',0,1
+	.word	885
+	.byte	1,1,2,35,2,25
+	.byte	'EN23',0,1
+	.word	885
+	.byte	1,0,2,35,2,25
+	.byte	'EN24',0,1
+	.word	885
+	.byte	1,7,2,35,3,25
+	.byte	'EN25',0,1
+	.word	885
+	.byte	1,6,2,35,3,25
+	.byte	'EN26',0,1
+	.word	885
+	.byte	1,5,2,35,3,25
+	.byte	'EN27',0,1
+	.word	885
+	.byte	1,4,2,35,3,25
+	.byte	'EN28',0,1
+	.word	885
+	.byte	1,3,2,35,3,25
+	.byte	'EN29',0,1
+	.word	885
+	.byte	1,2,2,35,3,25
+	.byte	'EN30',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'EN31',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_ACCEN0_Bits',0,9,79,3
+	.word	4854
+	.byte	24
+	.byte	'_Ifx_SCU_ACCEN1_Bits',0,9,82,16,4,25
+	.byte	'reserved_0',0,4
+	.word	1013
+	.byte	32,0,2,35,0,0,22
+	.byte	'Ifx_SCU_ACCEN1_Bits',0,9,85,3
+	.word	5411
+	.byte	24
+	.byte	'_Ifx_SCU_ARSTDIS_Bits',0,9,88,16,4,25
+	.byte	'STM0DIS',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'STM1DIS',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'STM2DIS',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'reserved_3',0,4
+	.word	1013
+	.byte	29,0,2,35,0,0,22
+	.byte	'Ifx_SCU_ARSTDIS_Bits',0,9,94,3
+	.word	5488
+	.byte	24
+	.byte	'_Ifx_SCU_CCUCON0_Bits',0,9,97,16,4,25
+	.byte	'BAUD1DIV',0,1
+	.word	885
+	.byte	4,4,2,35,0,25
+	.byte	'BAUD2DIV',0,1
+	.word	885
+	.byte	4,0,2,35,0,25
+	.byte	'SRIDIV',0,1
+	.word	885
+	.byte	4,4,2,35,1,25
+	.byte	'LPDIV',0,1
+	.word	885
+	.byte	4,0,2,35,1,25
+	.byte	'SPBDIV',0,1
+	.word	885
+	.byte	4,4,2,35,2,25
+	.byte	'FSI2DIV',0,1
+	.word	885
+	.byte	2,2,2,35,2,25
+	.byte	'reserved_22',0,1
+	.word	885
+	.byte	2,0,2,35,2,25
+	.byte	'FSIDIV',0,1
+	.word	885
+	.byte	2,6,2,35,3,25
+	.byte	'reserved_26',0,1
+	.word	885
+	.byte	2,4,2,35,3,25
+	.byte	'CLKSEL',0,1
+	.word	885
+	.byte	2,2,2,35,3,25
+	.byte	'UP',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_CCUCON0_Bits',0,9,111,3
+	.word	5624
+	.byte	24
+	.byte	'_Ifx_SCU_CCUCON1_Bits',0,9,114,16,4,25
+	.byte	'CANDIV',0,1
+	.word	885
+	.byte	4,4,2,35,0,25
+	.byte	'ERAYDIV',0,1
+	.word	885
+	.byte	4,0,2,35,0,25
+	.byte	'STMDIV',0,1
+	.word	885
+	.byte	4,4,2,35,1,25
+	.byte	'GTMDIV',0,1
+	.word	885
+	.byte	4,0,2,35,1,25
+	.byte	'ETHDIV',0,1
+	.word	885
+	.byte	4,4,2,35,2,25
+	.byte	'ASCLINFDIV',0,1
+	.word	885
+	.byte	4,0,2,35,2,25
+	.byte	'ASCLINSDIV',0,1
+	.word	885
+	.byte	4,4,2,35,3,25
+	.byte	'INSEL',0,1
+	.word	885
+	.byte	2,2,2,35,3,25
+	.byte	'UP',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_CCUCON1_Bits',0,9,126,3
+	.word	5904
+	.byte	24
+	.byte	'_Ifx_SCU_CCUCON2_Bits',0,9,129,1,16,4,25
+	.byte	'BBBDIV',0,1
+	.word	885
+	.byte	4,4,2,35,0,25
+	.byte	'reserved_4',0,4
+	.word	1013
+	.byte	26,2,2,35,0,25
+	.byte	'UP',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_CCUCON2_Bits',0,9,135,1,3
+	.word	6142
+	.byte	24
+	.byte	'_Ifx_SCU_CCUCON3_Bits',0,9,138,1,16,4,25
+	.byte	'PLLDIV',0,1
+	.word	885
+	.byte	6,2,2,35,0,25
+	.byte	'PLLSEL',0,1
+	.word	885
+	.byte	2,0,2,35,0,25
+	.byte	'PLLERAYDIV',0,1
+	.word	885
+	.byte	6,2,2,35,1,25
+	.byte	'PLLERAYSEL',0,1
+	.word	885
+	.byte	2,0,2,35,1,25
+	.byte	'SRIDIV',0,1
+	.word	885
+	.byte	6,2,2,35,2,25
+	.byte	'SRISEL',0,1
+	.word	885
+	.byte	2,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	5,3,2,35,3,25
+	.byte	'SLCK',0,1
+	.word	885
+	.byte	1,2,2,35,3,25
+	.byte	'UP',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_CCUCON3_Bits',0,9,150,1,3
+	.word	6270
+	.byte	24
+	.byte	'_Ifx_SCU_CCUCON4_Bits',0,9,153,1,16,4,25
+	.byte	'SPBDIV',0,1
+	.word	885
+	.byte	6,2,2,35,0,25
+	.byte	'SPBSEL',0,1
+	.word	885
+	.byte	2,0,2,35,0,25
+	.byte	'GTMDIV',0,1
+	.word	885
+	.byte	6,2,2,35,1,25
+	.byte	'GTMSEL',0,1
+	.word	885
+	.byte	2,0,2,35,1,25
+	.byte	'STMDIV',0,1
+	.word	885
+	.byte	6,2,2,35,2,25
+	.byte	'STMSEL',0,1
+	.word	885
+	.byte	2,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	5,3,2,35,3,25
+	.byte	'SLCK',0,1
+	.word	885
+	.byte	1,2,2,35,3,25
+	.byte	'UP',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_CCUCON4_Bits',0,9,165,1,3
+	.word	6513
+	.byte	24
+	.byte	'_Ifx_SCU_CCUCON5_Bits',0,9,168,1,16,4,25
+	.byte	'MAXDIV',0,1
+	.word	885
+	.byte	4,4,2,35,0,25
+	.byte	'reserved_4',0,4
+	.word	1013
+	.byte	26,2,2,35,0,25
+	.byte	'UP',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_CCUCON5_Bits',0,9,174,1,3
+	.word	6748
+	.byte	24
+	.byte	'_Ifx_SCU_CCUCON6_Bits',0,9,177,1,16,4,25
+	.byte	'CPU0DIV',0,1
+	.word	885
+	.byte	6,2,2,35,0,25
+	.byte	'reserved_6',0,4
+	.word	1013
+	.byte	26,0,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON6_Bits',0,9,181,1,3
+	.word	6876
+	.byte	24
+	.byte	'_Ifx_SCU_CCUCON7_Bits',0,9,184,1,16,4,25
+	.byte	'CPU1DIV',0,1
+	.word	885
+	.byte	6,2,2,35,0,25
+	.byte	'reserved_6',0,4
+	.word	1013
+	.byte	26,0,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON7_Bits',0,9,188,1,3
+	.word	6976
+	.byte	24
+	.byte	'_Ifx_SCU_CHIPID_Bits',0,9,191,1,16,4,25
+	.byte	'CHREV',0,1
+	.word	885
+	.byte	6,2,2,35,0,25
+	.byte	'CHTEC',0,1
+	.word	885
+	.byte	2,0,2,35,0,25
+	.byte	'CHID',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'EEA',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'UCODE',0,1
+	.word	885
+	.byte	7,0,2,35,2,25
+	.byte	'FSIZE',0,1
+	.word	885
+	.byte	4,4,2,35,3,25
+	.byte	'SP',0,1
+	.word	885
+	.byte	2,2,2,35,3,25
+	.byte	'SEC',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'reserved_31',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_CHIPID_Bits',0,9,202,1,3
+	.word	7076
+	.byte	24
+	.byte	'_Ifx_SCU_DTSCON_Bits',0,9,205,1,16,4,25
+	.byte	'PWD',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'START',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,1
+	.word	885
+	.byte	2,4,2,35,0,25
+	.byte	'CAL',0,4
+	.word	1013
+	.byte	20,8,2,35,0,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'SLCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_DTSCON_Bits',0,9,213,1,3
+	.word	7284
+	.byte	24
+	.byte	'_Ifx_SCU_DTSLIM_Bits',0,9,216,1,16,4,25
+	.byte	'LOWER',0,2
+	.word	1511
+	.byte	10,6,2,35,0,25
+	.byte	'reserved_10',0,1
+	.word	885
+	.byte	5,1,2,35,1,25
+	.byte	'LLU',0,1
+	.word	885
+	.byte	1,0,2,35,1,25
+	.byte	'UPPER',0,2
+	.word	1511
+	.byte	10,6,2,35,2,25
+	.byte	'reserved_26',0,1
+	.word	885
+	.byte	4,2,2,35,3,25
+	.byte	'SLCK',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'UOF',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_DTSLIM_Bits',0,9,225,1,3
+	.word	7449
+	.byte	24
+	.byte	'_Ifx_SCU_DTSSTAT_Bits',0,9,228,1,16,4,25
+	.byte	'RESULT',0,2
+	.word	1511
+	.byte	10,6,2,35,0,25
+	.byte	'reserved_10',0,1
+	.word	885
+	.byte	4,2,2,35,1,25
+	.byte	'RDY',0,1
+	.word	885
+	.byte	1,1,2,35,1,25
+	.byte	'BUSY',0,1
+	.word	885
+	.byte	1,0,2,35,1,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_DTSSTAT_Bits',0,9,235,1,3
+	.word	7632
+	.byte	24
+	.byte	'_Ifx_SCU_EICR_Bits',0,9,238,1,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	4,4,2,35,0,25
+	.byte	'EXIS0',0,1
+	.word	885
+	.byte	3,1,2,35,0,25
+	.byte	'reserved_7',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'FEN0',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'REN0',0,1
+	.word	885
+	.byte	1,6,2,35,1,25
+	.byte	'LDEN0',0,1
+	.word	885
+	.byte	1,5,2,35,1,25
+	.byte	'EIEN0',0,1
+	.word	885
+	.byte	1,4,2,35,1,25
+	.byte	'INP0',0,1
+	.word	885
+	.byte	3,1,2,35,1,25
+	.byte	'reserved_15',0,4
+	.word	1013
+	.byte	5,12,2,35,0,25
+	.byte	'EXIS1',0,1
+	.word	885
+	.byte	3,1,2,35,2,25
+	.byte	'reserved_23',0,1
+	.word	885
+	.byte	1,0,2,35,2,25
+	.byte	'FEN1',0,1
+	.word	885
+	.byte	1,7,2,35,3,25
+	.byte	'REN1',0,1
+	.word	885
+	.byte	1,6,2,35,3,25
+	.byte	'LDEN1',0,1
+	.word	885
+	.byte	1,5,2,35,3,25
+	.byte	'EIEN1',0,1
+	.word	885
+	.byte	1,4,2,35,3,25
+	.byte	'INP1',0,1
+	.word	885
+	.byte	3,1,2,35,3,25
+	.byte	'reserved_31',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EICR_Bits',0,9,129,2,3
+	.word	7786
+	.byte	24
+	.byte	'_Ifx_SCU_EIFR_Bits',0,9,132,2,16,4,25
+	.byte	'INTF0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'INTF1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'INTF2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'INTF3',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'INTF4',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'INTF5',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'INTF6',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'INTF7',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'reserved_8',0,4
+	.word	1013
+	.byte	24,0,2,35,0,0,22
+	.byte	'Ifx_SCU_EIFR_Bits',0,9,143,2,3
+	.word	8150
+	.byte	24
+	.byte	'_Ifx_SCU_EMSR_Bits',0,9,146,2,16,4,25
+	.byte	'POL',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'MODE',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'ENON',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'PSEL',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'reserved_4',0,2
+	.word	1511
+	.byte	12,0,2,35,0,25
+	.byte	'EMSF',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'SEMSF',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'reserved_18',0,1
+	.word	885
+	.byte	6,0,2,35,2,25
+	.byte	'EMSFM',0,1
+	.word	885
+	.byte	2,6,2,35,3,25
+	.byte	'SEMSFM',0,1
+	.word	885
+	.byte	2,4,2,35,3,25
+	.byte	'reserved_28',0,1
+	.word	885
+	.byte	4,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EMSR_Bits',0,9,159,2,3
+	.word	8361
+	.byte	24
+	.byte	'_Ifx_SCU_ESRCFG_Bits',0,9,162,2,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	7,1,2,35,0,25
+	.byte	'EDCON',0,2
+	.word	1511
+	.byte	2,7,2,35,0,25
+	.byte	'reserved_9',0,4
+	.word	1013
+	.byte	23,0,2,35,0,0,22
+	.byte	'Ifx_SCU_ESRCFG_Bits',0,9,167,2,3
+	.word	8613
+	.byte	24
+	.byte	'_Ifx_SCU_ESROCFG_Bits',0,9,170,2,16,4,25
+	.byte	'ARI',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'ARC',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,4
+	.word	1013
+	.byte	30,0,2,35,0,0,22
+	.byte	'Ifx_SCU_ESROCFG_Bits',0,9,175,2,3
+	.word	8731
+	.byte	24
+	.byte	'_Ifx_SCU_EVR13CON_Bits',0,9,178,2,16,4,25
+	.byte	'reserved_0',0,4
+	.word	1013
+	.byte	28,4,2,35,0,25
+	.byte	'EVR13OFF',0,1
+	.word	885
+	.byte	1,3,2,35,3,25
+	.byte	'BPEVR13OFF',0,1
+	.word	885
+	.byte	1,2,2,35,3,25
+	.byte	'reserved_30',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVR13CON_Bits',0,9,185,2,3
+	.word	8842
+	.byte	24
+	.byte	'_Ifx_SCU_EVR33CON_Bits',0,9,188,2,16,4,25
+	.byte	'reserved_0',0,4
+	.word	1013
+	.byte	28,4,2,35,0,25
+	.byte	'EVR33OFF',0,1
+	.word	885
+	.byte	1,3,2,35,3,25
+	.byte	'BPEVR33OFF',0,1
+	.word	885
+	.byte	1,2,2,35,3,25
+	.byte	'reserved_30',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVR33CON_Bits',0,9,195,2,3
+	.word	9005
+	.byte	24
+	.byte	'_Ifx_SCU_EVRADCSTAT_Bits',0,9,198,2,16,4,25
+	.byte	'ADC13V',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'ADC33V',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'ADCSWDV',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'VAL',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRADCSTAT_Bits',0,9,205,2,3
+	.word	9168
+	.byte	24
+	.byte	'_Ifx_SCU_EVRDVSTAT_Bits',0,9,208,2,16,4,25
+	.byte	'DVS13TRIM',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'reserved_8',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'DVS33TRIM',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'VAL',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRDVSTAT_Bits',0,9,215,2,3
+	.word	9326
+	.byte	24
+	.byte	'_Ifx_SCU_EVRMONCTRL_Bits',0,9,218,2,16,4,25
+	.byte	'EVR13OVMOD',0,1
+	.word	885
+	.byte	2,6,2,35,0,25
+	.byte	'reserved_2',0,1
+	.word	885
+	.byte	2,4,2,35,0,25
+	.byte	'EVR13UVMOD',0,1
+	.word	885
+	.byte	2,2,2,35,0,25
+	.byte	'reserved_6',0,1
+	.word	885
+	.byte	2,0,2,35,0,25
+	.byte	'EVR33OVMOD',0,1
+	.word	885
+	.byte	2,6,2,35,1,25
+	.byte	'reserved_10',0,1
+	.word	885
+	.byte	2,4,2,35,1,25
+	.byte	'EVR33UVMOD',0,1
+	.word	885
+	.byte	2,2,2,35,1,25
+	.byte	'reserved_14',0,1
+	.word	885
+	.byte	2,0,2,35,1,25
+	.byte	'SWDOVMOD',0,1
+	.word	885
+	.byte	2,6,2,35,2,25
+	.byte	'reserved_18',0,1
+	.word	885
+	.byte	2,4,2,35,2,25
+	.byte	'SWDUVMOD',0,1
+	.word	885
+	.byte	2,2,2,35,2,25
+	.byte	'reserved_22',0,2
+	.word	1511
+	.byte	10,0,2,35,2,0,22
+	.byte	'Ifx_SCU_EVRMONCTRL_Bits',0,9,232,2,3
+	.word	9491
+	.byte	24
+	.byte	'_Ifx_SCU_EVROSCCTRL_Bits',0,9,235,2,16,4,25
+	.byte	'OSCTRIM',0,2
+	.word	1511
+	.byte	10,6,2,35,0,25
+	.byte	'OSCPTAT',0,1
+	.word	885
+	.byte	6,0,2,35,1,25
+	.byte	'OSCANASEL',0,1
+	.word	885
+	.byte	4,4,2,35,2,25
+	.byte	'HPBGTRIM',0,2
+	.word	1511
+	.byte	7,5,2,35,2,25
+	.byte	'HPBGCLKEN',0,1
+	.word	885
+	.byte	1,4,2,35,3,25
+	.byte	'OSC3V3',0,1
+	.word	885
+	.byte	1,3,2,35,3,25
+	.byte	'reserved_29',0,1
+	.word	885
+	.byte	2,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVROSCCTRL_Bits',0,9,245,2,3
+	.word	9820
+	.byte	24
+	.byte	'_Ifx_SCU_EVROVMON_Bits',0,9,248,2,16,4,25
+	.byte	'EVR13OVVAL',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'EVR33OVVAL',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'SWDOVVAL',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVROVMON_Bits',0,9,255,2,3
+	.word	10041
+	.byte	24
+	.byte	'_Ifx_SCU_EVRRSTCON_Bits',0,9,130,3,16,4,25
+	.byte	'RST13TRIM',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'reserved_8',0,4
+	.word	1013
+	.byte	16,8,2,35,0,25
+	.byte	'RST13OFF',0,1
+	.word	885
+	.byte	1,7,2,35,3,25
+	.byte	'BPRST13OFF',0,1
+	.word	885
+	.byte	1,6,2,35,3,25
+	.byte	'RST33OFF',0,1
+	.word	885
+	.byte	1,5,2,35,3,25
+	.byte	'BPRST33OFF',0,1
+	.word	885
+	.byte	1,4,2,35,3,25
+	.byte	'RSTSWDOFF',0,1
+	.word	885
+	.byte	1,3,2,35,3,25
+	.byte	'BPRSTSWDOFF',0,1
+	.word	885
+	.byte	1,2,2,35,3,25
+	.byte	'reserved_30',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRRSTCON_Bits',0,9,142,3,3
+	.word	10204
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCOEFF1_Bits',0,9,145,3,16,4,25
+	.byte	'SD5P',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'SD5I',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'SD5D',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF1_Bits',0,9,152,3,3
+	.word	10476
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCOEFF2_Bits',0,9,155,3,16,4,25
+	.byte	'SD33P',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'SD33I',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'SD33D',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF2_Bits',0,9,162,3,3
+	.word	10629
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCOEFF3_Bits',0,9,165,3,16,4,25
+	.byte	'CT5REG0',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'CT5REG1',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'CT5REG2',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF3_Bits',0,9,172,3,3
+	.word	10785
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCOEFF4_Bits',0,9,175,3,16,4,25
+	.byte	'CT5REG3',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'CT5REG4',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	15,1,2,35,2,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF4_Bits',0,9,181,3,3
+	.word	10947
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCOEFF5_Bits',0,9,184,3,16,4,25
+	.byte	'CT33REG0',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'CT33REG1',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'CT33REG2',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF5_Bits',0,9,191,3,3
+	.word	11090
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCOEFF6_Bits',0,9,194,3,16,4,25
+	.byte	'CT33REG3',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'CT33REG4',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	15,1,2,35,2,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF6_Bits',0,9,200,3,3
+	.word	11255
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCTRL1_Bits',0,9,203,3,16,4,25
+	.byte	'SDFREQSPRD',0,2
+	.word	1511
+	.byte	16,0,2,35,0,25
+	.byte	'SDFREQ',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'SDSTEP',0,1
+	.word	885
+	.byte	4,4,2,35,3,25
+	.byte	'reserved_28',0,1
+	.word	885
+	.byte	2,2,2,35,3,25
+	.byte	'SDSAMPLE',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCTRL1_Bits',0,9,211,3,3
+	.word	11400
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCTRL2_Bits',0,9,214,3,16,4,25
+	.byte	'DRVP',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'SDMINMAXDC',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'DRVN',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'SDLUT',0,1
+	.word	885
+	.byte	6,2,2,35,3,25
+	.byte	'reserved_30',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCTRL2_Bits',0,9,222,3,3
+	.word	11581
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCTRL3_Bits',0,9,225,3,16,4,25
+	.byte	'SDPWMPRE',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'SDPID',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'SDVOKLVL',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCTRL3_Bits',0,9,232,3,3
+	.word	11755
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSDCTRL4_Bits',0,9,235,3,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'SYNCDIV',0,1
+	.word	885
+	.byte	3,5,2,35,1,25
+	.byte	'reserved_11',0,4
+	.word	1013
+	.byte	20,1,2,35,0,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRSDCTRL4_Bits',0,9,241,3,3
+	.word	11915
+	.byte	24
+	.byte	'_Ifx_SCU_EVRSTAT_Bits',0,9,244,3,16,4,25
+	.byte	'EVR13',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'OV13',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'EVR33',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'OV33',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'OVSWD',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'UV13',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'UV33',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'UVSWD',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'EXTPASS13',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'EXTPASS33',0,1
+	.word	885
+	.byte	1,6,2,35,1,25
+	.byte	'BGPROK',0,1
+	.word	885
+	.byte	1,5,2,35,1,25
+	.byte	'reserved_11',0,4
+	.word	1013
+	.byte	21,0,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSTAT_Bits',0,9,130,4,3
+	.word	12059
+	.byte	24
+	.byte	'_Ifx_SCU_EVRTRIM_Bits',0,9,133,4,16,4,25
+	.byte	'EVR13TRIM',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'SDVOUTSEL',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	15,1,2,35,2,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRTRIM_Bits',0,9,139,4,3
+	.word	12333
+	.byte	24
+	.byte	'_Ifx_SCU_EVRUVMON_Bits',0,9,142,4,16,4,25
+	.byte	'EVR13UVVAL',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'EVR33UVVAL',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'SWDUVVAL',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EVRUVMON_Bits',0,9,149,4,3
+	.word	12472
+	.byte	24
+	.byte	'_Ifx_SCU_EXTCON_Bits',0,9,152,4,16,4,25
+	.byte	'EN0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'reserved_1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'SEL0',0,1
+	.word	885
+	.byte	4,2,2,35,0,25
+	.byte	'reserved_6',0,2
+	.word	1511
+	.byte	10,0,2,35,0,25
+	.byte	'EN1',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'NSEL',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'SEL1',0,1
+	.word	885
+	.byte	4,2,2,35,2,25
+	.byte	'reserved_22',0,1
+	.word	885
+	.byte	2,0,2,35,2,25
+	.byte	'DIV1',0,1
+	.word	885
+	.byte	8,0,2,35,3,0,22
+	.byte	'Ifx_SCU_EXTCON_Bits',0,9,163,4,3
+	.word	12635
+	.byte	24
+	.byte	'_Ifx_SCU_FDR_Bits',0,9,166,4,16,4,25
+	.byte	'STEP',0,2
+	.word	1511
+	.byte	10,6,2,35,0,25
+	.byte	'reserved_10',0,1
+	.word	885
+	.byte	4,2,2,35,1,25
+	.byte	'DM',0,1
+	.word	885
+	.byte	2,0,2,35,1,25
+	.byte	'RESULT',0,2
+	.word	1511
+	.byte	10,6,2,35,2,25
+	.byte	'reserved_26',0,1
+	.word	885
+	.byte	5,1,2,35,3,25
+	.byte	'DISCLK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_FDR_Bits',0,9,174,4,3
+	.word	12853
+	.byte	24
+	.byte	'_Ifx_SCU_FMR_Bits',0,9,177,4,16,4,25
+	.byte	'FS0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'FS1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'FS2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'FS3',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'FS4',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'FS5',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'FS6',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'FS7',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'reserved_8',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'FC0',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'FC1',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'FC2',0,1
+	.word	885
+	.byte	1,5,2,35,2,25
+	.byte	'FC3',0,1
+	.word	885
+	.byte	1,4,2,35,2,25
+	.byte	'FC4',0,1
+	.word	885
+	.byte	1,3,2,35,2,25
+	.byte	'FC5',0,1
+	.word	885
+	.byte	1,2,2,35,2,25
+	.byte	'FC6',0,1
+	.word	885
+	.byte	1,1,2,35,2,25
+	.byte	'FC7',0,1
+	.word	885
+	.byte	1,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	8,0,2,35,3,0,22
+	.byte	'Ifx_SCU_FMR_Bits',0,9,197,4,3
+	.word	13016
+	.byte	24
+	.byte	'_Ifx_SCU_ID_Bits',0,9,200,4,16,4,25
+	.byte	'MODREV',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'MODTYPE',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'MODNUMBER',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_ID_Bits',0,9,205,4,3
+	.word	13352
+	.byte	24
+	.byte	'_Ifx_SCU_IGCR_Bits',0,9,208,4,16,4,25
+	.byte	'IPEN00',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'IPEN01',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'IPEN02',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'IPEN03',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'IPEN04',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'IPEN05',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'IPEN06',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'IPEN07',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'reserved_8',0,1
+	.word	885
+	.byte	5,3,2,35,1,25
+	.byte	'GEEN0',0,1
+	.word	885
+	.byte	1,2,2,35,1,25
+	.byte	'IGP0',0,1
+	.word	885
+	.byte	2,0,2,35,1,25
+	.byte	'IPEN10',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'IPEN11',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'IPEN12',0,1
+	.word	885
+	.byte	1,5,2,35,2,25
+	.byte	'IPEN13',0,1
+	.word	885
+	.byte	1,4,2,35,2,25
+	.byte	'IPEN14',0,1
+	.word	885
+	.byte	1,3,2,35,2,25
+	.byte	'IPEN15',0,1
+	.word	885
+	.byte	1,2,2,35,2,25
+	.byte	'IPEN16',0,1
+	.word	885
+	.byte	1,1,2,35,2,25
+	.byte	'IPEN17',0,1
+	.word	885
+	.byte	1,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	5,3,2,35,3,25
+	.byte	'GEEN1',0,1
+	.word	885
+	.byte	1,2,2,35,3,25
+	.byte	'IGP1',0,1
+	.word	885
+	.byte	2,0,2,35,3,0,22
+	.byte	'Ifx_SCU_IGCR_Bits',0,9,232,4,3
+	.word	13459
+	.byte	24
+	.byte	'_Ifx_SCU_IN_Bits',0,9,235,4,16,4,25
+	.byte	'P0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'P1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,4
+	.word	1013
+	.byte	30,0,2,35,0,0,22
+	.byte	'Ifx_SCU_IN_Bits',0,9,240,4,3
+	.word	13911
+	.byte	24
+	.byte	'_Ifx_SCU_IOCR_Bits',0,9,243,4,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	4,4,2,35,0,25
+	.byte	'PC0',0,1
+	.word	885
+	.byte	4,0,2,35,0,25
+	.byte	'reserved_8',0,1
+	.word	885
+	.byte	4,4,2,35,1,25
+	.byte	'PC1',0,1
+	.word	885
+	.byte	4,0,2,35,1,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_IOCR_Bits',0,9,250,4,3
+	.word	14010
+	.byte	24
+	.byte	'_Ifx_SCU_LBISTCTRL0_Bits',0,9,253,4,16,4,25
+	.byte	'LBISTREQ',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'LBISTREQP',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'PATTERNS',0,2
+	.word	1511
+	.byte	14,0,2,35,0,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_LBISTCTRL0_Bits',0,9,131,5,3
+	.word	14160
+	.byte	24
+	.byte	'_Ifx_SCU_LBISTCTRL1_Bits',0,9,134,5,16,4,25
+	.byte	'SEED',0,4
+	.word	1013
+	.byte	23,9,2,35,0,25
+	.byte	'reserved_23',0,1
+	.word	885
+	.byte	1,0,2,35,2,25
+	.byte	'SPLITSH',0,1
+	.word	885
+	.byte	3,5,2,35,3,25
+	.byte	'BODY',0,1
+	.word	885
+	.byte	1,4,2,35,3,25
+	.byte	'LBISTFREQU',0,1
+	.word	885
+	.byte	4,0,2,35,3,0,22
+	.byte	'Ifx_SCU_LBISTCTRL1_Bits',0,9,141,5,3
+	.word	14309
+	.byte	24
+	.byte	'_Ifx_SCU_LBISTCTRL2_Bits',0,9,144,5,16,4,25
+	.byte	'SIGNATURE',0,4
+	.word	1013
+	.byte	24,8,2,35,0,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	7,1,2,35,3,25
+	.byte	'LBISTDONE',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_LBISTCTRL2_Bits',0,9,149,5,3
+	.word	14470
+	.byte	24
+	.byte	'_Ifx_SCU_LCLCON_Bits',0,9,152,5,16,4,25
+	.byte	'reserved_0',0,2
+	.word	1511
+	.byte	16,0,2,35,0,25
+	.byte	'LS',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'reserved_17',0,2
+	.word	1511
+	.byte	14,1,2,35,2,25
+	.byte	'LSEN',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_LCLCON_Bits',0,9,158,5,3
+	.word	14600
+	.byte	24
+	.byte	'_Ifx_SCU_LCLTEST_Bits',0,9,161,5,16,4,25
+	.byte	'LCLT0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'LCLT1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,4
+	.word	1013
+	.byte	30,0,2,35,0,0,22
+	.byte	'Ifx_SCU_LCLTEST_Bits',0,9,166,5,3
+	.word	14732
+	.byte	24
+	.byte	'_Ifx_SCU_MANID_Bits',0,9,169,5,16,4,25
+	.byte	'DEPT',0,1
+	.word	885
+	.byte	5,3,2,35,0,25
+	.byte	'MANUF',0,2
+	.word	1511
+	.byte	11,0,2,35,0,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_MANID_Bits',0,9,174,5,3
+	.word	14847
+	.byte	24
+	.byte	'_Ifx_SCU_OMR_Bits',0,9,177,5,16,4,25
+	.byte	'PS0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'PS1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,2
+	.word	1511
+	.byte	14,0,2,35,0,25
+	.byte	'PCL0',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'PCL1',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'reserved_18',0,2
+	.word	1511
+	.byte	14,0,2,35,2,0,22
+	.byte	'Ifx_SCU_OMR_Bits',0,9,185,5,3
+	.word	14958
+	.byte	24
+	.byte	'_Ifx_SCU_OSCCON_Bits',0,9,188,5,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'PLLLV',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'OSCRES',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'GAINSEL',0,1
+	.word	885
+	.byte	2,3,2,35,0,25
+	.byte	'MODE',0,1
+	.word	885
+	.byte	2,1,2,35,0,25
+	.byte	'SHBY',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'PLLHV',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'reserved_9',0,1
+	.word	885
+	.byte	1,6,2,35,1,25
+	.byte	'X1D',0,1
+	.word	885
+	.byte	1,5,2,35,1,25
+	.byte	'X1DEN',0,1
+	.word	885
+	.byte	1,4,2,35,1,25
+	.byte	'reserved_12',0,1
+	.word	885
+	.byte	4,0,2,35,1,25
+	.byte	'OSCVAL',0,1
+	.word	885
+	.byte	5,3,2,35,2,25
+	.byte	'reserved_21',0,1
+	.word	885
+	.byte	2,1,2,35,2,25
+	.byte	'APREN',0,1
+	.word	885
+	.byte	1,0,2,35,2,25
+	.byte	'CAP0EN',0,1
+	.word	885
+	.byte	1,7,2,35,3,25
+	.byte	'CAP1EN',0,1
+	.word	885
+	.byte	1,6,2,35,3,25
+	.byte	'CAP2EN',0,1
+	.word	885
+	.byte	1,5,2,35,3,25
+	.byte	'CAP3EN',0,1
+	.word	885
+	.byte	1,4,2,35,3,25
+	.byte	'reserved_28',0,1
+	.word	885
+	.byte	4,0,2,35,3,0,22
+	.byte	'Ifx_SCU_OSCCON_Bits',0,9,209,5,3
+	.word	15116
+	.byte	24
+	.byte	'_Ifx_SCU_OUT_Bits',0,9,212,5,16,4,25
+	.byte	'P0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'P1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,4
+	.word	1013
+	.byte	30,0,2,35,0,0,22
+	.byte	'Ifx_SCU_OUT_Bits',0,9,217,5,3
+	.word	15528
+	.byte	24
+	.byte	'_Ifx_SCU_OVCCON_Bits',0,9,220,5,16,4,25
+	.byte	'CSEL0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'CSEL1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'CSEL2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'reserved_3',0,2
+	.word	1511
+	.byte	13,0,2,35,0,25
+	.byte	'OVSTRT',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'OVSTP',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'DCINVAL',0,1
+	.word	885
+	.byte	1,5,2,35,2,25
+	.byte	'reserved_19',0,1
+	.word	885
+	.byte	5,0,2,35,2,25
+	.byte	'OVCONF',0,1
+	.word	885
+	.byte	1,7,2,35,3,25
+	.byte	'POVCONF',0,1
+	.word	885
+	.byte	1,6,2,35,3,25
+	.byte	'reserved_26',0,1
+	.word	885
+	.byte	6,0,2,35,3,0,22
+	.byte	'Ifx_SCU_OVCCON_Bits',0,9,233,5,3
+	.word	15629
+	.byte	24
+	.byte	'_Ifx_SCU_OVCENABLE_Bits',0,9,236,5,16,4,25
+	.byte	'OVEN0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'OVEN1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'OVEN2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'reserved_3',0,4
+	.word	1013
+	.byte	29,0,2,35,0,0,22
+	.byte	'Ifx_SCU_OVCENABLE_Bits',0,9,242,5,3
+	.word	15896
+	.byte	24
+	.byte	'_Ifx_SCU_PDISC_Bits',0,9,245,5,16,4,25
+	.byte	'PDIS0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'PDIS1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,4
+	.word	1013
+	.byte	30,0,2,35,0,0,22
+	.byte	'Ifx_SCU_PDISC_Bits',0,9,250,5,3
+	.word	16032
+	.byte	24
+	.byte	'_Ifx_SCU_PDR_Bits',0,9,253,5,16,4,25
+	.byte	'PD0',0,1
+	.word	885
+	.byte	3,5,2,35,0,25
+	.byte	'PL0',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'PD1',0,1
+	.word	885
+	.byte	3,1,2,35,0,25
+	.byte	'PL1',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'reserved_8',0,4
+	.word	1013
+	.byte	24,0,2,35,0,0,22
+	.byte	'Ifx_SCU_PDR_Bits',0,9,132,6,3
+	.word	16143
+	.byte	24
+	.byte	'_Ifx_SCU_PDRR_Bits',0,9,135,6,16,4,25
+	.byte	'PDR0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'PDR1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'PDR2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'PDR3',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'PDR4',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'PDR5',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'PDR6',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'PDR7',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'reserved_8',0,4
+	.word	1013
+	.byte	24,0,2,35,0,0,22
+	.byte	'Ifx_SCU_PDRR_Bits',0,9,146,6,3
+	.word	16276
+	.byte	24
+	.byte	'_Ifx_SCU_PLLCON0_Bits',0,9,149,6,16,4,25
+	.byte	'VCOBYP',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'VCOPWD',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'MODEN',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'reserved_3',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'SETFINDIS',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'CLRFINDIS',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'OSCDISCDIS',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'reserved_7',0,2
+	.word	1511
+	.byte	2,7,2,35,0,25
+	.byte	'NDIV',0,1
+	.word	885
+	.byte	7,0,2,35,1,25
+	.byte	'PLLPWD',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'reserved_17',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'RESLD',0,1
+	.word	885
+	.byte	1,5,2,35,2,25
+	.byte	'reserved_19',0,1
+	.word	885
+	.byte	5,0,2,35,2,25
+	.byte	'PDIV',0,1
+	.word	885
+	.byte	4,4,2,35,3,25
+	.byte	'reserved_28',0,1
+	.word	885
+	.byte	4,0,2,35,3,0,22
+	.byte	'Ifx_SCU_PLLCON0_Bits',0,9,166,6,3
+	.word	16479
+	.byte	24
+	.byte	'_Ifx_SCU_PLLCON1_Bits',0,9,169,6,16,4,25
+	.byte	'K2DIV',0,1
+	.word	885
+	.byte	7,1,2,35,0,25
+	.byte	'reserved_7',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'K3DIV',0,1
+	.word	885
+	.byte	7,1,2,35,1,25
+	.byte	'reserved_15',0,1
+	.word	885
+	.byte	1,0,2,35,1,25
+	.byte	'K1DIV',0,1
+	.word	885
+	.byte	7,1,2,35,2,25
+	.byte	'reserved_23',0,2
+	.word	1511
+	.byte	9,0,2,35,2,0,22
+	.byte	'Ifx_SCU_PLLCON1_Bits',0,9,177,6,3
+	.word	16835
+	.byte	24
+	.byte	'_Ifx_SCU_PLLCON2_Bits',0,9,180,6,16,4,25
+	.byte	'MODCFG',0,2
+	.word	1511
+	.byte	16,0,2,35,0,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_PLLCON2_Bits',0,9,184,6,3
+	.word	17013
+	.byte	24
+	.byte	'_Ifx_SCU_PLLERAYCON0_Bits',0,9,187,6,16,4,25
+	.byte	'VCOBYP',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'VCOPWD',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,1
+	.word	885
+	.byte	2,4,2,35,0,25
+	.byte	'SETFINDIS',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'CLRFINDIS',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'OSCDISCDIS',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'reserved_7',0,2
+	.word	1511
+	.byte	2,7,2,35,0,25
+	.byte	'NDIV',0,1
+	.word	885
+	.byte	5,2,2,35,1,25
+	.byte	'reserved_14',0,1
+	.word	885
+	.byte	2,0,2,35,1,25
+	.byte	'PLLPWD',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'reserved_17',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'RESLD',0,1
+	.word	885
+	.byte	1,5,2,35,2,25
+	.byte	'reserved_19',0,1
+	.word	885
+	.byte	5,0,2,35,2,25
+	.byte	'PDIV',0,1
+	.word	885
+	.byte	4,4,2,35,3,25
+	.byte	'reserved_28',0,1
+	.word	885
+	.byte	4,0,2,35,3,0,22
+	.byte	'Ifx_SCU_PLLERAYCON0_Bits',0,9,204,6,3
+	.word	17113
+	.byte	24
+	.byte	'_Ifx_SCU_PLLERAYCON1_Bits',0,9,207,6,16,4,25
+	.byte	'K2DIV',0,1
+	.word	885
+	.byte	7,1,2,35,0,25
+	.byte	'reserved_7',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'K3DIV',0,1
+	.word	885
+	.byte	4,4,2,35,1,25
+	.byte	'reserved_12',0,1
+	.word	885
+	.byte	4,0,2,35,1,25
+	.byte	'K1DIV',0,1
+	.word	885
+	.byte	7,1,2,35,2,25
+	.byte	'reserved_23',0,2
+	.word	1511
+	.byte	9,0,2,35,2,0,22
+	.byte	'Ifx_SCU_PLLERAYCON1_Bits',0,9,215,6,3
+	.word	17483
+	.byte	24
+	.byte	'_Ifx_SCU_PLLERAYSTAT_Bits',0,9,218,6,16,4,25
+	.byte	'VCOBYST',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'PWDSTAT',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'VCOLOCK',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'FINDIS',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'K1RDY',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'K2RDY',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'reserved_6',0,4
+	.word	1013
+	.byte	26,0,2,35,0,0,22
+	.byte	'Ifx_SCU_PLLERAYSTAT_Bits',0,9,227,6,3
+	.word	17669
+	.byte	24
+	.byte	'_Ifx_SCU_PLLSTAT_Bits',0,9,230,6,16,4,25
+	.byte	'VCOBYST',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'reserved_1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'VCOLOCK',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'FINDIS',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'K1RDY',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'K2RDY',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'reserved_6',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'MODRUN',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'reserved_8',0,4
+	.word	1013
+	.byte	24,0,2,35,0,0,22
+	.byte	'Ifx_SCU_PLLSTAT_Bits',0,9,241,6,3
+	.word	17867
+	.byte	24
+	.byte	'_Ifx_SCU_PMCSR_Bits',0,9,244,6,16,4,25
+	.byte	'REQSLP',0,1
+	.word	885
+	.byte	2,6,2,35,0,25
+	.byte	'SMUSLP',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'reserved_3',0,1
+	.word	885
+	.byte	5,0,2,35,0,25
+	.byte	'PMST',0,1
+	.word	885
+	.byte	3,5,2,35,1,25
+	.byte	'reserved_11',0,4
+	.word	1013
+	.byte	21,0,2,35,0,0,22
+	.byte	'Ifx_SCU_PMCSR_Bits',0,9,251,6,3
+	.word	18100
+	.byte	24
+	.byte	'_Ifx_SCU_PMSWCR0_Bits',0,9,254,6,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'ESR1WKEN',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'PINAWKEN',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'PINBWKEN',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'ESR0DFEN',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'ESR0EDCON',0,1
+	.word	885
+	.byte	2,1,2,35,0,25
+	.byte	'ESR1DFEN',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'ESR1EDCON',0,1
+	.word	885
+	.byte	2,6,2,35,1,25
+	.byte	'PINADFEN',0,1
+	.word	885
+	.byte	1,5,2,35,1,25
+	.byte	'PINAEDCON',0,1
+	.word	885
+	.byte	2,3,2,35,1,25
+	.byte	'PINBDFEN',0,1
+	.word	885
+	.byte	1,2,2,35,1,25
+	.byte	'PINBEDCON',0,1
+	.word	885
+	.byte	2,0,2,35,1,25
+	.byte	'SCREN',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'STBYRAMSEL',0,1
+	.word	885
+	.byte	2,5,2,35,2,25
+	.byte	'SCRCLKSEL',0,1
+	.word	885
+	.byte	1,4,2,35,2,25
+	.byte	'SCRWKEN',0,1
+	.word	885
+	.byte	1,3,2,35,2,25
+	.byte	'TRISTEN',0,1
+	.word	885
+	.byte	1,2,2,35,2,25
+	.byte	'TRISTREQ',0,1
+	.word	885
+	.byte	1,1,2,35,2,25
+	.byte	'PORSTDF',0,1
+	.word	885
+	.byte	1,0,2,35,2,25
+	.byte	'reserved_24',0,1
+	.word	885
+	.byte	1,7,2,35,3,25
+	.byte	'DCDCSYNC',0,1
+	.word	885
+	.byte	1,6,2,35,3,25
+	.byte	'reserved_26',0,1
+	.word	885
+	.byte	3,3,2,35,3,25
+	.byte	'ESR0TRIST',0,1
+	.word	885
+	.byte	1,2,2,35,3,25
+	.byte	'reserved_30',0,1
+	.word	885
+	.byte	1,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_PMSWCR0_Bits',0,9,153,7,3
+	.word	18252
+	.byte	24
+	.byte	'_Ifx_SCU_PMSWCR1_Bits',0,9,156,7,16,4,25
+	.byte	'SCRSTEN',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'SCRSTREQ',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,1
+	.word	885
+	.byte	6,0,2,35,0,25
+	.byte	'CPUIDLSEL',0,1
+	.word	885
+	.byte	3,5,2,35,1,25
+	.byte	'reserved_11',0,1
+	.word	885
+	.byte	1,4,2,35,1,25
+	.byte	'IRADIS',0,1
+	.word	885
+	.byte	1,3,2,35,1,25
+	.byte	'reserved_13',0,1
+	.word	885
+	.byte	3,0,2,35,1,25
+	.byte	'SCRCFG',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'CPUSEL',0,1
+	.word	885
+	.byte	3,5,2,35,3,25
+	.byte	'STBYEVEN',0,1
+	.word	885
+	.byte	1,4,2,35,3,25
+	.byte	'STBYEV',0,1
+	.word	885
+	.byte	3,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_PMSWCR1_Bits',0,9,170,7,3
+	.word	18819
+	.byte	24
+	.byte	'_Ifx_SCU_PMSWCR2_Bits',0,9,173,7,16,4,25
+	.byte	'SCRINT',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'BUSY',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'SCRECC',0,1
+	.word	885
+	.byte	1,6,2,35,1,25
+	.byte	'SCRWDT',0,1
+	.word	885
+	.byte	1,5,2,35,1,25
+	.byte	'SCRRST',0,1
+	.word	885
+	.byte	1,4,2,35,1,25
+	.byte	'reserved_12',0,1
+	.word	885
+	.byte	4,0,2,35,1,25
+	.byte	'TCINT',0,1
+	.word	885
+	.byte	8,0,2,35,2,25
+	.byte	'TCINTREQ',0,1
+	.word	885
+	.byte	1,7,2,35,3,25
+	.byte	'SMURST',0,1
+	.word	885
+	.byte	1,6,2,35,3,25
+	.byte	'RST',0,1
+	.word	885
+	.byte	1,5,2,35,3,25
+	.byte	'reserved_27',0,1
+	.word	885
+	.byte	4,1,2,35,3,25
+	.byte	'LCK',0,1
+	.word	885
+	.byte	1,0,2,35,3,0,22
+	.byte	'Ifx_SCU_PMSWCR2_Bits',0,9,187,7,3
+	.word	19113
+	.byte	24
+	.byte	'_Ifx_SCU_PMSWSTAT_Bits',0,9,190,7,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	2,6,2,35,0,25
+	.byte	'ESR1WKP',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'ESR1OVRUN',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'PINAWKP',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'PINAOVRUN',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'PINBWKP',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'PINBOVRUN',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'reserved_8',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'PORSTDF',0,1
+	.word	885
+	.byte	1,6,2,35,1,25
+	.byte	'HWCFGEVR',0,1
+	.word	885
+	.byte	3,3,2,35,1,25
+	.byte	'STBYRAM',0,1
+	.word	885
+	.byte	2,1,2,35,1,25
+	.byte	'TRIST',0,1
+	.word	885
+	.byte	1,0,2,35,1,25
+	.byte	'SCRST',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'SCRWKP',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'SCR',0,1
+	.word	885
+	.byte	1,5,2,35,2,25
+	.byte	'SCRWKEN',0,1
+	.word	885
+	.byte	1,4,2,35,2,25
+	.byte	'ESR1WKEN',0,1
+	.word	885
+	.byte	1,3,2,35,2,25
+	.byte	'PINAWKEN',0,1
+	.word	885
+	.byte	1,2,2,35,2,25
+	.byte	'PINBWKEN',0,1
+	.word	885
+	.byte	1,1,2,35,2,25
+	.byte	'reserved_23',0,2
+	.word	1511
+	.byte	4,5,2,35,2,25
+	.byte	'ESR0TRIST',0,1
+	.word	885
+	.byte	1,4,2,35,3,25
+	.byte	'reserved_28',0,1
+	.word	885
+	.byte	4,0,2,35,3,0,22
+	.byte	'Ifx_SCU_PMSWSTAT_Bits',0,9,214,7,3
+	.word	19391
+	.byte	24
+	.byte	'_Ifx_SCU_PMSWSTATCLR_Bits',0,9,217,7,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	2,6,2,35,0,25
+	.byte	'ESR1WKPCLR',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'ESR1OVRUNCLR',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'PINAWKPCLR',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'PINAOVRUNCLR',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'PINBWKPCLR',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'PINBOVRUNCLR',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'reserved_8',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'SCRSTCLR',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'SCRWKPCLR',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'reserved_18',0,2
+	.word	1511
+	.byte	14,0,2,35,2,0,22
+	.byte	'Ifx_SCU_PMSWSTATCLR_Bits',0,9,230,7,3
+	.word	19887
+	.byte	24
+	.byte	'_Ifx_SCU_RSTCON2_Bits',0,9,233,7,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'CLRC',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,2
+	.word	1511
+	.byte	10,4,2,35,0,25
+	.byte	'CSS0',0,1
+	.word	885
+	.byte	1,3,2,35,1,25
+	.byte	'CSS1',0,1
+	.word	885
+	.byte	1,2,2,35,1,25
+	.byte	'CSS2',0,1
+	.word	885
+	.byte	1,1,2,35,1,25
+	.byte	'reserved_15',0,1
+	.word	885
+	.byte	1,0,2,35,1,25
+	.byte	'USRINFO',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_RSTCON2_Bits',0,9,243,7,3
+	.word	20200
+	.byte	24
+	.byte	'_Ifx_SCU_RSTCON_Bits',0,9,246,7,16,4,25
+	.byte	'ESR0',0,1
+	.word	885
+	.byte	2,6,2,35,0,25
+	.byte	'ESR1',0,1
+	.word	885
+	.byte	2,4,2,35,0,25
+	.byte	'reserved_4',0,1
+	.word	885
+	.byte	2,2,2,35,0,25
+	.byte	'SMU',0,1
+	.word	885
+	.byte	2,0,2,35,0,25
+	.byte	'SW',0,1
+	.word	885
+	.byte	2,6,2,35,1,25
+	.byte	'STM0',0,1
+	.word	885
+	.byte	2,4,2,35,1,25
+	.byte	'STM1',0,1
+	.word	885
+	.byte	2,2,2,35,1,25
+	.byte	'STM2',0,1
+	.word	885
+	.byte	2,0,2,35,1,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_RSTCON_Bits',0,9,129,8,3
+	.word	20409
+	.byte	24
+	.byte	'_Ifx_SCU_RSTSTAT_Bits',0,9,132,8,16,4,25
+	.byte	'ESR0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'ESR1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'SMU',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'SW',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'STM0',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'STM1',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'STM2',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'reserved_8',0,1
+	.word	885
+	.byte	8,0,2,35,1,25
+	.byte	'PORST',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'reserved_17',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'CB0',0,1
+	.word	885
+	.byte	1,5,2,35,2,25
+	.byte	'CB1',0,1
+	.word	885
+	.byte	1,4,2,35,2,25
+	.byte	'CB3',0,1
+	.word	885
+	.byte	1,3,2,35,2,25
+	.byte	'reserved_21',0,1
+	.word	885
+	.byte	2,1,2,35,2,25
+	.byte	'EVR13',0,1
+	.word	885
+	.byte	1,0,2,35,2,25
+	.byte	'EVR33',0,1
+	.word	885
+	.byte	1,7,2,35,3,25
+	.byte	'SWD',0,1
+	.word	885
+	.byte	1,6,2,35,3,25
+	.byte	'reserved_26',0,1
+	.word	885
+	.byte	2,4,2,35,3,25
+	.byte	'STBYR',0,1
+	.word	885
+	.byte	1,3,2,35,3,25
+	.byte	'reserved_29',0,1
+	.word	885
+	.byte	3,0,2,35,3,0,22
+	.byte	'Ifx_SCU_RSTSTAT_Bits',0,9,155,8,3
+	.word	20620
+	.byte	24
+	.byte	'_Ifx_SCU_SAFECON_Bits',0,9,158,8,16,4,25
+	.byte	'HBT',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'reserved_1',0,4
+	.word	1013
+	.byte	31,0,2,35,0,0,22
+	.byte	'Ifx_SCU_SAFECON_Bits',0,9,162,8,3
+	.word	21052
+	.byte	24
+	.byte	'_Ifx_SCU_STSTAT_Bits',0,9,165,8,16,4,25
+	.byte	'HWCFG',0,1
+	.word	885
+	.byte	8,0,2,35,0,25
+	.byte	'FTM',0,1
+	.word	885
+	.byte	7,1,2,35,1,25
+	.byte	'MODE',0,1
+	.word	885
+	.byte	1,0,2,35,1,25
+	.byte	'FCBAE',0,1
+	.word	885
+	.byte	1,7,2,35,2,25
+	.byte	'LUDIS',0,1
+	.word	885
+	.byte	1,6,2,35,2,25
+	.byte	'reserved_18',0,1
+	.word	885
+	.byte	1,5,2,35,2,25
+	.byte	'TRSTL',0,1
+	.word	885
+	.byte	1,4,2,35,2,25
+	.byte	'SPDEN',0,1
+	.word	885
+	.byte	1,3,2,35,2,25
+	.byte	'reserved_21',0,1
+	.word	885
+	.byte	3,0,2,35,2,25
+	.byte	'RAMINT',0,1
+	.word	885
+	.byte	1,7,2,35,3,25
+	.byte	'reserved_25',0,1
+	.word	885
+	.byte	7,0,2,35,3,0,22
+	.byte	'Ifx_SCU_STSTAT_Bits',0,9,178,8,3
+	.word	21148
+	.byte	24
+	.byte	'_Ifx_SCU_SWRSTCON_Bits',0,9,181,8,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'SWRSTREQ',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,4
+	.word	1013
+	.byte	30,0,2,35,0,0,22
+	.byte	'Ifx_SCU_SWRSTCON_Bits',0,9,186,8,3
+	.word	21408
+	.byte	24
+	.byte	'_Ifx_SCU_SYSCON_Bits',0,9,189,8,16,4,25
+	.byte	'CCTRIG0',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'reserved_1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'RAMINTM',0,1
+	.word	885
+	.byte	2,4,2,35,0,25
+	.byte	'SETLUDIS',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'reserved_5',0,1
+	.word	885
+	.byte	3,0,2,35,0,25
+	.byte	'DATM',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'reserved_9',0,4
+	.word	1013
+	.byte	23,0,2,35,0,0,22
+	.byte	'Ifx_SCU_SYSCON_Bits',0,9,198,8,3
+	.word	21533
+	.byte	24
+	.byte	'_Ifx_SCU_TRAPCLR_Bits',0,9,201,8,16,4,25
+	.byte	'ESR0T',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'ESR1T',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'SMUT',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'reserved_4',0,4
+	.word	1013
+	.byte	28,0,2,35,0,0,22
+	.byte	'Ifx_SCU_TRAPCLR_Bits',0,9,208,8,3
+	.word	21730
+	.byte	24
+	.byte	'_Ifx_SCU_TRAPDIS_Bits',0,9,211,8,16,4,25
+	.byte	'ESR0T',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'ESR1T',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'SMUT',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'reserved_4',0,4
+	.word	1013
+	.byte	28,0,2,35,0,0,22
+	.byte	'Ifx_SCU_TRAPDIS_Bits',0,9,218,8,3
+	.word	21883
+	.byte	24
+	.byte	'_Ifx_SCU_TRAPSET_Bits',0,9,221,8,16,4,25
+	.byte	'ESR0T',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'ESR1T',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'SMUT',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'reserved_4',0,4
+	.word	1013
+	.byte	28,0,2,35,0,0,22
+	.byte	'Ifx_SCU_TRAPSET_Bits',0,9,228,8,3
+	.word	22036
+	.byte	24
+	.byte	'_Ifx_SCU_TRAPSTAT_Bits',0,9,231,8,16,4,25
+	.byte	'ESR0T',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'ESR1T',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'reserved_2',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'SMUT',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'reserved_4',0,4
+	.word	1013
+	.byte	28,0,2,35,0,0,22
+	.byte	'Ifx_SCU_TRAPSTAT_Bits',0,9,238,8,3
+	.word	22189
+	.byte	24
+	.byte	'_Ifx_SCU_WDTCPU_CON0_Bits',0,9,241,8,16,4,25
+	.byte	'ENDINIT',0,4
+	.word	1727
+	.byte	1,31,2,35,0,25
+	.byte	'LCK',0,4
+	.word	1727
+	.byte	1,30,2,35,0,25
+	.byte	'PW',0,4
+	.word	1727
+	.byte	14,16,2,35,0,25
+	.byte	'REL',0,4
+	.word	1727
+	.byte	16,0,2,35,0,0,22
+	.byte	'Ifx_SCU_WDTCPU_CON0_Bits',0,9,247,8,3
+	.word	22344
+	.byte	24
+	.byte	'_Ifx_SCU_WDTCPU_CON1_Bits',0,9,250,8,16,4,25
+	.byte	'reserved_0',0,1
+	.word	885
+	.byte	2,6,2,35,0,25
+	.byte	'IR0',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'DR',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'reserved_4',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'IR1',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'UR',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'PAR',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'TCR',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'TCTR',0,1
+	.word	885
+	.byte	7,0,2,35,1,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_WDTCPU_CON1_Bits',0,9,134,9,3
+	.word	22474
+	.byte	24
+	.byte	'_Ifx_SCU_WDTCPU_SR_Bits',0,9,137,9,16,4,25
+	.byte	'AE',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'OE',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'IS0',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'DS',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'TO',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'IS1',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'US',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'PAS',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'TCS',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'TCT',0,1
+	.word	885
+	.byte	7,0,2,35,1,25
+	.byte	'TIM',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_WDTCPU_SR_Bits',0,9,150,9,3
+	.word	22712
+	.byte	24
+	.byte	'_Ifx_SCU_WDTS_CON0_Bits',0,9,153,9,16,4,25
+	.byte	'ENDINIT',0,4
+	.word	1727
+	.byte	1,31,2,35,0,25
+	.byte	'LCK',0,4
+	.word	1727
+	.byte	1,30,2,35,0,25
+	.byte	'PW',0,4
+	.word	1727
+	.byte	14,16,2,35,0,25
+	.byte	'REL',0,4
+	.word	1727
+	.byte	16,0,2,35,0,0,22
+	.byte	'Ifx_SCU_WDTS_CON0_Bits',0,9,159,9,3
+	.word	22935
+	.byte	24
+	.byte	'_Ifx_SCU_WDTS_CON1_Bits',0,9,162,9,16,4,25
+	.byte	'CLRIRF',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'reserved_1',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'IR0',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'DR',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'reserved_4',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'IR1',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'UR',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'PAR',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'TCR',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'TCTR',0,1
+	.word	885
+	.byte	7,0,2,35,1,25
+	.byte	'reserved_16',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_WDTS_CON1_Bits',0,9,175,9,3
+	.word	23061
+	.byte	24
+	.byte	'_Ifx_SCU_WDTS_SR_Bits',0,9,178,9,16,4,25
+	.byte	'AE',0,1
+	.word	885
+	.byte	1,7,2,35,0,25
+	.byte	'OE',0,1
+	.word	885
+	.byte	1,6,2,35,0,25
+	.byte	'IS0',0,1
+	.word	885
+	.byte	1,5,2,35,0,25
+	.byte	'DS',0,1
+	.word	885
+	.byte	1,4,2,35,0,25
+	.byte	'TO',0,1
+	.word	885
+	.byte	1,3,2,35,0,25
+	.byte	'IS1',0,1
+	.word	885
+	.byte	1,2,2,35,0,25
+	.byte	'US',0,1
+	.word	885
+	.byte	1,1,2,35,0,25
+	.byte	'PAS',0,1
+	.word	885
+	.byte	1,0,2,35,0,25
+	.byte	'TCS',0,1
+	.word	885
+	.byte	1,7,2,35,1,25
+	.byte	'TCT',0,1
+	.word	885
+	.byte	7,0,2,35,1,25
+	.byte	'TIM',0,2
+	.word	1511
+	.byte	16,0,2,35,2,0,22
+	.byte	'Ifx_SCU_WDTS_SR_Bits',0,9,191,9,3
+	.word	23313
+	.byte	26,9,199,9,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	4854
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_ACCEN0',0,9,204,9,3
+	.word	23532
+	.byte	26,9,207,9,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	5411
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_ACCEN1',0,9,212,9,3
+	.word	23596
+	.byte	26,9,215,9,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	5488
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_ARSTDIS',0,9,220,9,3
+	.word	23660
+	.byte	26,9,223,9,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	5624
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON0',0,9,228,9,3
+	.word	23725
+	.byte	26,9,231,9,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	5904
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON1',0,9,236,9,3
+	.word	23790
+	.byte	26,9,239,9,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	6142
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON2',0,9,244,9,3
+	.word	23855
+	.byte	26,9,247,9,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	6270
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON3',0,9,252,9,3
+	.word	23920
+	.byte	26,9,255,9,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	6513
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON4',0,9,132,10,3
+	.word	23985
+	.byte	26,9,135,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	6748
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON5',0,9,140,10,3
+	.word	24050
+	.byte	26,9,143,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	6876
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON6',0,9,148,10,3
+	.word	24115
+	.byte	26,9,151,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	6976
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_CCUCON7',0,9,156,10,3
+	.word	24180
+	.byte	26,9,159,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	7076
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_CHIPID',0,9,164,10,3
+	.word	24245
+	.byte	26,9,167,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	7284
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_DTSCON',0,9,172,10,3
+	.word	24309
+	.byte	26,9,175,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	7449
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_DTSLIM',0,9,180,10,3
+	.word	24373
+	.byte	26,9,183,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	7632
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_DTSSTAT',0,9,188,10,3
+	.word	24437
+	.byte	26,9,191,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	7786
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EICR',0,9,196,10,3
+	.word	24502
+	.byte	26,9,199,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	8150
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EIFR',0,9,204,10,3
+	.word	24564
+	.byte	26,9,207,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	8361
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EMSR',0,9,212,10,3
+	.word	24626
+	.byte	26,9,215,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	8613
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_ESRCFG',0,9,220,10,3
+	.word	24688
+	.byte	26,9,223,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	8731
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_ESROCFG',0,9,228,10,3
+	.word	24752
+	.byte	26,9,231,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	8842
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVR13CON',0,9,236,10,3
+	.word	24817
+	.byte	26,9,239,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	9005
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVR33CON',0,9,244,10,3
+	.word	24883
+	.byte	26,9,247,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	9168
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRADCSTAT',0,9,252,10,3
+	.word	24949
+	.byte	26,9,255,10,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	9326
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRDVSTAT',0,9,132,11,3
+	.word	25017
+	.byte	26,9,135,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	9491
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRMONCTRL',0,9,140,11,3
+	.word	25084
+	.byte	26,9,143,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	9820
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVROSCCTRL',0,9,148,11,3
+	.word	25152
+	.byte	26,9,151,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	10041
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVROVMON',0,9,156,11,3
+	.word	25220
+	.byte	26,9,159,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	10204
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRRSTCON',0,9,164,11,3
+	.word	25286
+	.byte	26,9,167,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	10476
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF1',0,9,172,11,3
+	.word	25353
+	.byte	26,9,175,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	10629
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF2',0,9,180,11,3
+	.word	25422
+	.byte	26,9,183,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	10785
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF3',0,9,188,11,3
+	.word	25491
+	.byte	26,9,191,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	10947
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF4',0,9,196,11,3
+	.word	25560
+	.byte	26,9,199,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	11090
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF5',0,9,204,11,3
+	.word	25629
+	.byte	26,9,207,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	11255
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCOEFF6',0,9,212,11,3
+	.word	25698
+	.byte	26,9,215,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	11400
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCTRL1',0,9,220,11,3
+	.word	25767
+	.byte	26,9,223,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	11581
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCTRL2',0,9,228,11,3
+	.word	25835
+	.byte	26,9,231,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	11755
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCTRL3',0,9,236,11,3
+	.word	25903
+	.byte	26,9,239,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	11915
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSDCTRL4',0,9,244,11,3
+	.word	25971
+	.byte	26,9,247,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	12059
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRSTAT',0,9,252,11,3
+	.word	26039
+	.byte	26,9,255,11,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	12333
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRTRIM',0,9,132,12,3
+	.word	26104
+	.byte	26,9,135,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	12472
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EVRUVMON',0,9,140,12,3
+	.word	26169
+	.byte	26,9,143,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	12635
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_EXTCON',0,9,148,12,3
+	.word	26235
+	.byte	26,9,151,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	12853
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_FDR',0,9,156,12,3
+	.word	26299
+	.byte	26,9,159,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	13016
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_FMR',0,9,164,12,3
+	.word	26360
+	.byte	26,9,167,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	13352
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_ID',0,9,172,12,3
+	.word	26421
+	.byte	26,9,175,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	13459
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_IGCR',0,9,180,12,3
+	.word	26481
+	.byte	26,9,183,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	13911
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_IN',0,9,188,12,3
+	.word	26543
+	.byte	26,9,191,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	14010
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_IOCR',0,9,196,12,3
+	.word	26603
+	.byte	26,9,199,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	14160
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_LBISTCTRL0',0,9,204,12,3
+	.word	26665
+	.byte	26,9,207,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	14309
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_LBISTCTRL1',0,9,212,12,3
+	.word	26733
+	.byte	26,9,215,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	14470
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_LBISTCTRL2',0,9,220,12,3
+	.word	26801
+	.byte	26,9,223,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	14600
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_LCLCON',0,9,228,12,3
+	.word	26869
+	.byte	26,9,231,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	14732
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_LCLTEST',0,9,236,12,3
+	.word	26933
+	.byte	26,9,239,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	14847
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_MANID',0,9,244,12,3
+	.word	26998
+	.byte	26,9,247,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	14958
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_OMR',0,9,252,12,3
+	.word	27061
+	.byte	26,9,255,12,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	15116
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_OSCCON',0,9,132,13,3
+	.word	27122
+	.byte	26,9,135,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	15528
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_OUT',0,9,140,13,3
+	.word	27186
+	.byte	26,9,143,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	15629
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_OVCCON',0,9,148,13,3
+	.word	27247
+	.byte	26,9,151,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	15896
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_OVCENABLE',0,9,156,13,3
+	.word	27311
+	.byte	26,9,159,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	16032
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PDISC',0,9,164,13,3
+	.word	27378
+	.byte	26,9,167,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	16143
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PDR',0,9,172,13,3
+	.word	27441
+	.byte	26,9,175,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	16276
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PDRR',0,9,180,13,3
+	.word	27502
+	.byte	26,9,183,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	16479
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PLLCON0',0,9,188,13,3
+	.word	27564
+	.byte	26,9,191,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	16835
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PLLCON1',0,9,196,13,3
+	.word	27629
+	.byte	26,9,199,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	17013
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PLLCON2',0,9,204,13,3
+	.word	27694
+	.byte	26,9,207,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	17113
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PLLERAYCON0',0,9,212,13,3
+	.word	27759
+	.byte	26,9,215,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	17483
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PLLERAYCON1',0,9,220,13,3
+	.word	27828
+	.byte	26,9,223,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	17669
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PLLERAYSTAT',0,9,228,13,3
+	.word	27897
+	.byte	26,9,231,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	17867
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PLLSTAT',0,9,236,13,3
+	.word	27966
+	.byte	26,9,239,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	18100
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PMCSR',0,9,244,13,3
+	.word	28031
+	.byte	26,9,247,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	18252
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PMSWCR0',0,9,252,13,3
+	.word	28094
+	.byte	26,9,255,13,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	18819
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PMSWCR1',0,9,132,14,3
+	.word	28159
+	.byte	26,9,135,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	19113
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PMSWCR2',0,9,140,14,3
+	.word	28224
+	.byte	26,9,143,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	19391
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PMSWSTAT',0,9,148,14,3
+	.word	28289
+	.byte	26,9,151,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	19887
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_PMSWSTATCLR',0,9,156,14,3
+	.word	28355
+	.byte	26,9,159,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	20409
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_RSTCON',0,9,164,14,3
+	.word	28424
+	.byte	26,9,167,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	20200
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_RSTCON2',0,9,172,14,3
+	.word	28488
+	.byte	26,9,175,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	20620
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_RSTSTAT',0,9,180,14,3
+	.word	28553
+	.byte	26,9,183,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	21052
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_SAFECON',0,9,188,14,3
+	.word	28618
+	.byte	26,9,191,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	21148
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_STSTAT',0,9,196,14,3
+	.word	28683
+	.byte	26,9,199,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	21408
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_SWRSTCON',0,9,204,14,3
+	.word	28747
+	.byte	26,9,207,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	21533
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_SYSCON',0,9,212,14,3
+	.word	28813
+	.byte	26,9,215,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	21730
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_TRAPCLR',0,9,220,14,3
+	.word	28877
+	.byte	26,9,223,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	21883
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_TRAPDIS',0,9,228,14,3
+	.word	28942
+	.byte	26,9,231,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	22036
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_TRAPSET',0,9,236,14,3
+	.word	29007
+	.byte	26,9,239,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	22189
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_TRAPSTAT',0,9,244,14,3
+	.word	29072
+	.byte	26,9,247,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	22344
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_WDTCPU_CON0',0,9,252,14,3
+	.word	29138
+	.byte	26,9,255,14,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	22474
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_WDTCPU_CON1',0,9,132,15,3
+	.word	29207
+	.byte	26,9,135,15,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	22712
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_WDTCPU_SR',0,9,140,15,3
+	.word	29276
+	.byte	26,9,143,15,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	22935
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_WDTS_CON0',0,9,148,15,3
+	.word	29343
+	.byte	26,9,151,15,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	23061
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_WDTS_CON1',0,9,156,15,3
+	.word	29410
+	.byte	26,9,159,15,9,4,27
+	.byte	'U',0
+	.word	1013
+	.byte	4,2,35,0,27
+	.byte	'I',0
+	.word	964
+	.byte	4,2,35,0,27
+	.byte	'B',0
+	.word	23313
+	.byte	4,2,35,0,0,22
+	.byte	'Ifx_SCU_WDTS_SR',0,9,164,15,3
+	.word	29477
+	.byte	24
+	.byte	'_Ifx_SCU_WDTCPU',0,9,175,15,25,12,27
+	.byte	'CON0',0
+	.word	29138
+	.byte	4,2,35,0,27
+	.byte	'CON1',0
+	.word	29207
+	.byte	4,2,35,4,27
+	.byte	'SR',0
+	.word	29276
+	.byte	4,2,35,8,0,15
+	.word	29542
+	.byte	22
+	.byte	'Ifx_SCU_WDTCPU',0,9,180,15,3
+	.word	29605
+	.byte	24
+	.byte	'_Ifx_SCU_WDTS',0,9,183,15,25,12,27
+	.byte	'CON0',0
+	.word	29343
+	.byte	4,2,35,0,27
+	.byte	'CON1',0
+	.word	29410
+	.byte	4,2,35,4,27
+	.byte	'SR',0
+	.word	29477
+	.byte	4,2,35,8,0,15
+	.word	29634
+	.byte	22
+	.byte	'Ifx_SCU_WDTS',0,9,188,15,3
+	.word	29695
+	.byte	22
+	.byte	'IfxEmem_LockedState',0,3,72,3
+	.word	1173
+	.byte	22
+	.byte	'IfxEmem_State',0,3,80,3
+	.word	1275
+	.byte	22
+	.byte	'IfxEmem_TileConfigMode',0,3,87,3
+	.word	395
+	.byte	22
+	.byte	'IfxEmem_TileNumber',0,3,109,3
+	.word	441
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L8:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,4,1,58,15,59,15,57,15
+	.byte	11,15,0,0,11,40,0,3,8,28,13,0,0,12,38,0,73,19,0,0,13,46,1,3,8,54,15,39,12,63,12,60,12,0,0,14,5,0,73,19
+	.byte	0,0,15,53,0,73,19,0,0,16,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,17,5,0,3,8,73,19,0,0,18,46,1,49,19
+	.byte	0,0,19,5,0,49,19,0,0,20,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,21,46,1,3,8,58,15
+	.byte	59,15,57,15,54,15,39,12,63,12,60,12,0,0,22,22,0,3,8,58,15,59,15,57,15,73,19,0,0,23,21,0,54,15,0,0,24,19
+	.byte	1,3,8,58,15,59,15,57,15,11,15,0,0,25,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,26,23,1,58,15,59,15,57
+	.byte	15,11,15,0,0,27,13,0,3,8,73,19,11,15,56,9,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L9:
+	.word	.L41-.L40
+.L40:
+	.half	3
+	.word	.L43-.L42
+.L42:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl',0
+	.byte	0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'IfxEmem.h',0,2,0,0
+	.byte	'..\\src\\AppSw\\Tricore\\Driver\\LQ_EMEM.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'IfxEmem_regdef.h',0,3,0,0
+	.byte	'IfxScu_cfg.h',0,4,0,0
+	.byte	'IfxScu_regdef.h',0,3,0,0,0
+.L43:
+.L41:
+	.sdecl	'.debug_info',debug,cluster('EMEM_InitConfig')
+	.sect	'.debug_info'
+.L10:
+	.word	707
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\src\\AppSw\\Tricore\\Driver\\LQ_EMEM.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\Debug\\',0,12,1
+	.word	.L13,.L12
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'EMEM_InitConfig',0,1,33,6,1,1,1
+	.word	.L5,.L15,.L4
+	.byte	4
+	.word	.L5,.L15
+	.byte	5
+	.word	.L16,.L17,.L18
+	.byte	6
+	.word	.L19,.L20
+	.byte	7
+	.word	.L21,.L17,.L18
+	.byte	0,5
+	.word	.L16,.L18,.L22
+	.byte	6
+	.word	.L19,.L20
+	.byte	7
+	.word	.L21,.L18,.L22
+	.byte	0,5
+	.word	.L16,.L22,.L23
+	.byte	6
+	.word	.L19,.L20
+	.byte	7
+	.word	.L21,.L22,.L23
+	.byte	0,4
+	.word	.L23,.L2
+	.byte	8
+	.byte	'i',0,1,45,11
+	.word	.L24,.L25
+	.byte	0,5
+	.word	.L26,.L2,.L27
+	.byte	6
+	.word	.L28,.L29
+	.byte	6
+	.word	.L30,.L31
+	.byte	7
+	.word	.L32,.L2,.L27
+	.byte	0,5
+	.word	.L26,.L27,.L33
+	.byte	6
+	.word	.L28,.L29
+	.byte	6
+	.word	.L30,.L31
+	.byte	7
+	.word	.L32,.L27,.L33
+	.byte	0,5
+	.word	.L26,.L33,.L34
+	.byte	6
+	.word	.L28,.L29
+	.byte	6
+	.word	.L30,.L31
+	.byte	7
+	.word	.L32,.L33,.L34
+	.byte	0,5
+	.word	.L26,.L34,.L35
+	.byte	6
+	.word	.L28,.L29
+	.byte	6
+	.word	.L30,.L31
+	.byte	7
+	.word	.L32,.L34,.L35
+	.byte	0,5
+	.word	.L26,.L35,.L36
+	.byte	6
+	.word	.L28,.L29
+	.byte	6
+	.word	.L30,.L31
+	.byte	7
+	.word	.L32,.L35,.L36
+	.byte	0,5
+	.word	.L26,.L36,.L37
+	.byte	6
+	.word	.L28,.L29
+	.byte	6
+	.word	.L30,.L31
+	.byte	7
+	.word	.L32,.L36,.L37
+	.byte	0,5
+	.word	.L26,.L37,.L38
+	.byte	6
+	.word	.L28,.L29
+	.byte	6
+	.word	.L30,.L31
+	.byte	7
+	.word	.L32,.L37,.L38
+	.byte	0,5
+	.word	.L26,.L38,.L39
+	.byte	6
+	.word	.L28,.L29
+	.byte	6
+	.word	.L30,.L31
+	.byte	7
+	.word	.L32,.L38,.L39
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('EMEM_InitConfig')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,29,1,49,16,17,1,18,1,0,0,6,5,0,49,16,2,6,0,0,7,11
+	.byte	0,49,16,17,1,18,1,0,0,8,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('EMEM_InitConfig')
+	.sect	'.debug_line'
+.L12:
+	.word	.L45-.L44
+.L44:
+	.half	3
+	.word	.L47-.L46
+.L46:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\tasking workspace\\Copy of LQ_TC26xB_LIBtaskingAICTone\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std',0
+	.byte	0
+	.byte	'..\\src\\AppSw\\Tricore\\Driver\\LQ_EMEM.c',0,0,0,0
+	.byte	'IfxEmem.h',0,1,0,0,0
+.L47:
+	.byte	5,30,7,0,5,2
+	.word	.L5
+	.byte	3,34,1,5,58,9
+	.half	.L48-.L5
+	.byte	3,2,1,5,2,9
+	.half	.L49-.L48
+	.byte	1,4,2,5,29,7,9
+	.half	.L17-.L49
+	.byte	3,145,1,1,5,37,9
+	.half	.L50-.L17
+	.byte	1,5,29,9
+	.half	.L18-.L50
+	.byte	1,5,37,9
+	.half	.L51-.L18
+	.byte	1,5,29,9
+	.half	.L22-.L51
+	.byte	1,5,37,9
+	.half	.L52-.L22
+	.byte	1,4,1,5,26,9
+	.half	.L23-.L52
+	.byte	3,247,126,1,5,4,9
+	.half	.L3-.L23
+	.byte	3,2,1,5,26,9
+	.half	.L53-.L3
+	.byte	3,126,1,4,2,5,54,7,9
+	.half	.L2-.L53
+	.byte	3,129,1,1,5,27,9
+	.half	.L54-.L2
+	.byte	1,5,54,9
+	.half	.L55-.L54
+	.byte	1,5,27,9
+	.half	.L56-.L55
+	.byte	1,5,57,9
+	.half	.L57-.L56
+	.byte	1,5,30,1,5,54,9
+	.half	.L27-.L57
+	.byte	1,5,57,9
+	.half	.L58-.L27
+	.byte	1,5,30,1,5,54,9
+	.half	.L33-.L58
+	.byte	1,5,57,9
+	.half	.L59-.L33
+	.byte	1,5,30,1,5,54,9
+	.half	.L34-.L59
+	.byte	1,5,57,9
+	.half	.L60-.L34
+	.byte	1,5,30,1,5,54,9
+	.half	.L35-.L60
+	.byte	1,5,57,9
+	.half	.L61-.L35
+	.byte	1,5,30,1,5,54,9
+	.half	.L36-.L61
+	.byte	1,5,57,9
+	.half	.L62-.L36
+	.byte	1,5,30,1,5,54,9
+	.half	.L37-.L62
+	.byte	1,5,57,9
+	.half	.L63-.L37
+	.byte	1,5,30,1,5,54,9
+	.half	.L38-.L63
+	.byte	1,5,57,9
+	.half	.L64-.L38
+	.byte	1,5,30,1,4,1,5,1,9
+	.half	.L39-.L64
+	.byte	3,141,127,1,7,9
+	.half	.L14-.L39
+	.byte	0,1,1
+.L45:
+	.sdecl	'.debug_ranges',debug,cluster('EMEM_InitConfig')
+	.sect	'.debug_ranges'
+.L13:
+	.word	-1,.L5,0,.L14-.L5,0,0
+	.sdecl	'.debug_loc',debug,cluster('EMEM_InitConfig')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L15-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L20:
+	.word	0,0
+.L25:
+	.word	0,0
+.L29:
+	.word	0,0
+.L31:
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L65:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('EMEM_InitConfig')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L65,.L5,.L15-.L5
+
+
+	; Module end
