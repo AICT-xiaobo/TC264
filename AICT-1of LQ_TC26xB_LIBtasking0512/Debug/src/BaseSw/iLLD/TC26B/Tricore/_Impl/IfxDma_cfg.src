@@ -1,0 +1,172 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99293038"
+	.compiler_invocation	"ctc --dep-file=src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\.IfxDma_cfg.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\AppSw\\Tricore -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\AppSw\\Tricore\\APP -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\AppSw\\Tricore\\Main -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\AppSw -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Platform -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Platform\\Tricore -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Sfr -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Sfr\\TC26B -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\If -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\AppSw\\Tricore\\User -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\AppSw -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\AppSw\\Tricore\\APP -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\AppSw\\Tricore\\Main -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\AppSw\\Tricore\\Driver -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Platform -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Platform\\Tricore -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Sfr -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Sfr\\TC26B -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\_Utilities -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\If -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\If\\Ccu6If -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\StdIf -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Bsp -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\General -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math -IE:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\Service\\CpuGeneric\\SysSe\\Time -g2 --make-target=src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxDma_cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxDma_cfg.src ..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxDma_cfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxDma_cfg.c'
+
+	
+$TC16X
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	644
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxDma_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'E:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	175
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	182
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	224
+	.byte	7
+	.word	224
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	240
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	245
+	.byte	9
+	.byte	'value',0
+	.word	224
+	.byte	9
+	.byte	'compare',0
+	.word	224
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	302
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	224
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	175
+	.byte	11,1,7
+	.word	370
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	372
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,105,29
+	.word	395
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,109,29
+	.word	426
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,113,29
+	.word	463
+	.byte	10
+	.byte	'sint16',0,2,126,29
+	.word	302
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,131,1,29
+	.word	514
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,139,1,29
+	.word	542
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,168,1,29
+	.word	575
+	.byte	12
+	.byte	'void',0,7
+	.word	601
+	.byte	10
+	.byte	'pvoid',0,3,57,28
+	.word	607
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,79,28
+	.word	542
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\tasking workspace\\AICT-1of LQ_TC26xB_LIBtasking0512\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	0
+	.byte	'..\\src\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl\\IfxDma_cfg.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0,0
+.L9:
+.L7:
+
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	     1  /**
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	     2   * \file IfxDma_cfg.c
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	     3   * \brief DMA on-chip implementation data
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	     4   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	     5   * \version iLLD_1_0_1_11_0
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	     6   * \copyright Copyright (c) 2016 Infineon Technologies AG. All rights reserved.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	     7   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	     8   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	     9   *                                 IMPORTANT NOTICE
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    10   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    11   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    16  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    17  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    19  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    26  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    32   * language processor.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    33  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    41  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    42   *
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    43   */
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    44  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    45  /******************************************************************************/
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    46  /*----------------------------------Includes----------------------------------*/
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    47  /******************************************************************************/
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    48  
+; ..\src\BaseSw\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.c	    49  #include "IfxDma_cfg.h"
+
+	; Module end
